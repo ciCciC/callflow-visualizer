@@ -1,0 +1,66 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "test/unit/**/*.test.ts",
+    "untyped.d.ts"
+  ],
+  "exclude": [
+    "src/**/*local*.ts",
+    "code_coverage/**",
+    "node_modules/**",
+    "dist/**",
+    "*.js"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "outDir": "./dist",
+    "lib": [
+      "es2018",
+      "es2015",
+      "es2017",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "module": "commonjs",
+    "declaration": true,
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": [
+      {
+        "name": "typescript-lit-html-plugin"
+      }
+    ],
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": true,
+    "target": "es2018",
+    "traceResolution": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "@types/jasmine",
+      "@types/karma",
+      "@types/node",
+//      "@types/ing-web"
+    ]
+  }
+}

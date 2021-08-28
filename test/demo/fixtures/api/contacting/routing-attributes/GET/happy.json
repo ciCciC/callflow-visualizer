@@ -1,0 +1,3195 @@
+[
+  {
+    "name": "skills",
+    "id": 1,
+    "values": [
+      {
+        "name": "Iris_NPA1.1",
+        "id": 272501
+      },
+      {
+        "name": "Lending",
+        "id": 4
+      },
+      {
+        "name": "ZAP.Leven.0",
+        "id": 152544
+      },
+      {
+        "name": "ZAP.SLK-WijzigenEnBetaalpas.0",
+        "id": 153512
+      },
+      {
+        "name": "ZAP.Lenen.1",
+        "id": 152543
+      },
+      {
+        "name": "LEN.Operations_Specialist.0",
+        "id": 357
+      },
+      {
+        "name": "twix",
+        "id": 153540
+      },
+      {
+        "name": "LEN.Actualisatie.2",
+        "id": 332
+      },
+      {
+        "name": "Complaint_Investments",
+        "id": 176507
+      },
+      {
+        "name": "Iris_NPA2.0",
+        "id": 272502
+      },
+      {
+        "name": "ZAP.Cards.0",
+        "id": 152525
+      },
+      {
+        "name": "ZAP.Helpdesk.0",
+        "id": 152528
+      },
+      {
+        "name": "ZAP.Webhelp_Ervaren_Medewrkr.0",
+        "id": 153518
+      },
+      {
+        "name": "ZAP.Zakelijk_IBP_Helpdesk.1",
+        "id": 153533
+      },
+      {
+        "name": "ZAP.Betalen_Rest.0",
+        "id": 152517
+      },
+      {
+        "name": "LEN.Actualisatie.1",
+        "id": 331
+      },
+      {
+        "name": "ZAP.KV-Cards_Collections.1",
+        "id": 276503
+      },
+      {
+        "name": "LEN.Risicobeheer_2.0",
+        "id": 327
+      },
+      {
+        "name": "BELL.Beleggen.0",
+        "id": 158500
+      },
+      {
+        "name": "LEN.Taskforce_JO-INA.0",
+        "id": 501
+      },
+      {
+        "name": "LEN.Loyalty.0",
+        "id": 348
+      },
+      {
+        "name": "call_later",
+        "id": 178502
+      },
+      {
+        "name": "LEN.Juridische_Omzettingen.2",
+        "id": 338
+      },
+      {
+        "name": "ZAP.Lenen.0",
+        "id": 152542
+      },
+      {
+        "name": "HYP.Concreet-Zakelijk.0",
+        "id": 137503
+      },
+      {
+        "name": "HYP.Algemeen_CHT",
+        "id": 230500
+      },
+      {
+        "name": "LEN.Loyalty-Retentie.2",
+        "id": 347
+      },
+      {
+        "name": "Complaint_Accounts",
+        "id": 176505
+      },
+      {
+        "name": "ZAP.Betalen_Betalen.1",
+        "id": 152514
+      },
+      {
+        "name": "ZAP.Alarmlijn.1",
+        "id": 152508
+      },
+      {
+        "name": "ZAP.KV-Cards_CorporateCards.0",
+        "id": 276508
+      },
+      {
+        "name": "HYP.Aflosvrij.1",
+        "id": 137501
+      },
+      {
+        "name": "LEN.Juridische_Omzettingen.0",
+        "id": 336
+      },
+      {
+        "name": "twilions",
+        "id": 152500
+      },
+      {
+        "name": "ZAP.SDN_Coulance.0",
+        "id": 153504
+      },
+      {
+        "name": "demo-skill-1",
+        "id": 190500
+      },
+      {
+        "name": "LEN.Risicobeheer_1.1",
+        "id": 325
+      },
+      {
+        "name": "ZAP.Zakelijk_Events.1",
+        "id": 153531
+      },
+      {
+        "name": "ZAP.RR-Beslagen.1",
+        "id": 152549
+      },
+      {
+        "name": "ConfidenceCheck",
+        "id": 36
+      },
+      {
+        "name": "Z_Kred-Lopend_Krediet",
+        "id": 42
+      },
+      {
+        "name": "ZAP.Zakelijk_MING2elijn.0",
+        "id": 153536
+      },
+      {
+        "name": "HYP.Aflosvrij.0",
+        "id": 137500
+      },
+      {
+        "name": "BRX.front",
+        "id": 248503
+      },
+      {
+        "name": "Administration_RequestInfo",
+        "id": 176506
+      },
+      {
+        "name": "Twitel.Demo",
+        "id": 210501
+      },
+      {
+        "name": "Complaint_Lending",
+        "id": 176508
+      },
+      {
+        "name": "Administration_ExpatInfo",
+        "id": 176504
+      },
+      {
+        "name": "ZAP.SLK-Opheffen.0",
+        "id": 153508
+      },
+      {
+        "name": "LEN.Quality_Assurance.2",
+        "id": 353
+      },
+      {
+        "name": "ZAP.SLK-Particulieren.1",
+        "id": 153511
+      },
+      {
+        "name": "ZAP.KV-Cards_BusinessCards.1",
+        "id": 276507
+      },
+      {
+        "name": "PhoneOnly",
+        "id": 288550
+      },
+      {
+        "name": "LEN.Grootzakelijk_PPW.1",
+        "id": 319
+      },
+      {
+        "name": "LEN.Audits-Systems.0",
+        "id": 354
+      },
+      {
+        "name": "ZAP.Betalen_Betalen.0",
+        "id": 152513
+      },
+      {
+        "name": "development",
+        "id": 138515
+      },
+      {
+        "name": "LEN.Risicobeheer.1",
+        "id": 322
+      },
+      {
+        "name": "Twitel.Request_Assistance",
+        "id": 164500
+      },
+      {
+        "name": "ZAP.Kansrijk.1",
+        "id": 152537
+      },
+      {
+        "name": "LEN.Hypotheken.2",
+        "id": 341
+      },
+      {
+        "name": "ZAP.SDN_Maatwerk.0",
+        "id": 153506
+      },
+      {
+        "name": "Z_Kred-Nieuw_Verhoging",
+        "id": 41
+      },
+      {
+        "name": "ZAP.Zakelijk_Basis.1",
+        "id": 153525
+      },
+      {
+        "name": "ZAP.KIA.1",
+        "id": 152539
+      },
+      {
+        "name": "ZAP.Helpdesk_SCA.1",
+        "id": 247502
+      },
+      {
+        "name": "ZAP.Zakelijk_Basis.0",
+        "id": 153524
+      },
+      {
+        "name": "ZAP.KV-Cards_BusinessCards.0",
+        "id": 276506
+      },
+      {
+        "name": "ZAP.Sparen.1",
+        "id": 153515
+      },
+      {
+        "name": "ZAP.Zakelijk_Billing.0",
+        "id": 153526
+      },
+      {
+        "name": "ZAP.SDN_Maatwerk.1",
+        "id": 153507
+      },
+      {
+        "name": "PreviewDialer",
+        "id": 207500
+      },
+      {
+        "name": "HYP.connect_acquisitie.1",
+        "id": 137505
+      },
+      {
+        "name": "CMNtestpagina",
+        "id": 197501
+      },
+      {
+        "name": "ZAP.Zakelijk_DVB_Incasso.1",
+        "id": 153529
+      },
+      {
+        "name": "LEN.Grootzakelijk_PPW.0",
+        "id": 318
+      },
+      {
+        "name": "henk2",
+        "id": 235504
+      },
+      {
+        "name": "LEN.Risicobeheer.2",
+        "id": 323
+      },
+      {
+        "name": "HYP.cct1.0",
+        "id": 286500
+      },
+      {
+        "name": "ZAP.KV-Cards_Collections.0",
+        "id": 276502
+      },
+      {
+        "name": "ZAP.BetalenTBIC.0",
+        "id": 152523
+      },
+      {
+        "name": "ZAP.Helpdesk-2de-lijn.1",
+        "id": 152535
+      },
+      {
+        "name": "KAP.aanvragen_1ste_lijn.1",
+        "id": 315
+      },
+      {
+        "name": "ZAP.Betalen_Rest.1",
+        "id": 152518
+      },
+      {
+        "name": "LEN.Taskforce_HRCK.1",
+        "id": 361
+      },
+      {
+        "name": "ZAP.RR-Beslagen.0",
+        "id": 152548
+      },
+      {
+        "name": "ZAP.Betalen_Opheffen.0",
+        "id": 152515
+      },
+      {
+        "name": "ZAP.RR-Bewinden.0",
+        "id": 153500
+      },
+      {
+        "name": "Mortgages",
+        "id": 2
+      },
+      {
+        "name": "Wonen",
+        "id": 104450
+      },
+      {
+        "name": "Twitel",
+        "id": 163500
+      },
+      {
+        "name": "ZAP.Helpdesk_Zak_SCA.1",
+        "id": 247505
+      },
+      {
+        "name": "LEN.Wijzigen.1",
+        "id": 343
+      },
+      {
+        "name": "KAP.beheer_1ste_lijn.0",
+        "id": 310
+      },
+      {
+        "name": "LEN.Taskforce_HRCK.2",
+        "id": 362
+      },
+      {
+        "name": "LEN.Loyalty-Retentie.0",
+        "id": 345
+      },
+      {
+        "name": "LEN.Audits-Systems.2",
+        "id": 356
+      },
+      {
+        "name": "ZAP.KIA.0",
+        "id": 152538
+      },
+      {
+        "name": "ZAP.Cards.1",
+        "id": 152526
+      },
+      {
+        "name": "demo-skill",
+        "id": 189500
+      },
+      {
+        "name": "Banking",
+        "id": 3
+      },
+      {
+        "name": "ZAP.Webhelp_Ervaren_Medewrkr.1",
+        "id": 153519
+      },
+      {
+        "name": "LEN.Loyalty.2",
+        "id": 350
+      },
+      {
+        "name": "LEN.Wijzigen.0",
+        "id": 342
+      },
+      {
+        "name": "test-campaign",
+        "id": 6052
+      },
+      {
+        "name": "LEN.Taskforce_HRCK.0",
+        "id": 360
+      },
+      {
+        "name": "ZAP.Webhelp_Navraag_MING.0",
+        "id": 153520
+      },
+      {
+        "name": "CallbackInQueue.Demo",
+        "id": 224500
+      },
+      {
+        "name": "ZAP.SLK-Opheffen.1",
+        "id": 153509
+      },
+      {
+        "name": "ZAP.KV-Cards_Finance.1",
+        "id": 276505
+      },
+      {
+        "name": "ZAP.Zakelijk_ART.0",
+        "id": 153522
+      },
+      {
+        "name": "KAP.aanvragen_1ste_lijn.0",
+        "id": 314
+      },
+      {
+        "name": "ZAP.Zakelijk_Events.0",
+        "id": 153530
+      },
+      {
+        "name": "Investing",
+        "id": 6
+      },
+      {
+        "name": "KAP.aanvragen_1ste_lijn_CMN.1",
+        "id": 313
+      },
+      {
+        "name": "LEN.Risicobeheer_2.1",
+        "id": 328
+      },
+      {
+        "name": "Digital20",
+        "id": 39453
+      },
+      {
+        "name": "KAP.2de_lijn.1",
+        "id": 317
+      },
+      {
+        "name": "LEN.Watchlist.1",
+        "id": 334
+      },
+      {
+        "name": "ZAP.Helpdesk.1",
+        "id": 152529
+      },
+      {
+        "name": "rosilio",
+        "id": 28200
+      },
+      {
+        "name": "Rosilio",
+        "id": 295550
+      },
+      {
+        "name": "ADV.Intake-Zakelijk",
+        "id": 136500
+      },
+      {
+        "name": "ZAP.Zakelijk_iDeal.0",
+        "id": 153534
+      },
+      {
+        "name": "ZAP.Betalen.0",
+        "id": 152511
+      },
+      {
+        "name": "SuperCircle1_Default",
+        "id": 176503
+      },
+      {
+        "name": "LEN.Risicobeheer_1.2",
+        "id": 326
+      },
+      {
+        "name": "Business",
+        "id": 35452
+      },
+      {
+        "name": "HYP.connect_acquisitie.0",
+        "id": 137504
+      },
+      {
+        "name": "demo-skill-2",
+        "id": 190501
+      },
+      {
+        "name": "LEN.Quality_Assurance.1",
+        "id": 352
+      },
+      {
+        "name": "ZAP.Zakelijk_IBP_Helpdesk.0",
+        "id": 153532
+      },
+      {
+        "name": "ZAP.Leven.1",
+        "id": 152545
+      },
+      {
+        "name": "ZAP.BetalenSparenIVR.0",
+        "id": 152521
+      },
+      {
+        "name": "ZAP.Kansrijk.0",
+        "id": 152536
+      },
+      {
+        "name": "Iris_NPA2.1",
+        "id": 272503
+      },
+      {
+        "name": "ZAP.SDN_Coulance.1",
+        "id": 153505
+      },
+      {
+        "name": "Cancellation_Letter_ING",
+        "id": 172501
+      },
+      {
+        "name": "LEN.Wijzigen.2",
+        "id": 344
+      },
+      {
+        "name": "HYP.Concreet-Particulier.0",
+        "id": 137502
+      },
+      {
+        "name": "LEN.Taskforce_JO-INA.2",
+        "id": 503
+      },
+      {
+        "name": "CallMeNow",
+        "id": 88456
+      },
+      {
+        "name": "Private",
+        "id": 1
+      },
+      {
+        "name": "LEN.Loyalty-Retentie.1",
+        "id": 346
+      },
+      {
+        "name": "LEN.Loyalty.1",
+        "id": 349
+      },
+      {
+        "name": "ZAP.Zakelijk_Billing.1",
+        "id": 153527
+      },
+      {
+        "name": "Dummy",
+        "id": 306500
+      },
+      {
+        "name": "ZAP.Kwartaallimiet.0",
+        "id": 152540
+      },
+      {
+        "name": "ZAP.Helpdesk_App.1",
+        "id": 152531
+      },
+      {
+        "name": "ZAP.SDN_Algemeen.1",
+        "id": 153503
+      },
+      {
+        "name": "ZAP.Helpdesk_TAN.1",
+        "id": 152533
+      },
+      {
+        "name": "ZAP.Alarmlijn.0",
+        "id": 152507
+      },
+      {
+        "name": "sometestvalue",
+        "id": 260500
+      },
+      {
+        "name": "ZAP.Rentepunten.0",
+        "id": 152546
+      },
+      {
+        "name": "LEN.Operations_Specialist.1",
+        "id": 358
+      },
+      {
+        "name": "HYP.cct1.2",
+        "id": 286502
+      },
+      {
+        "name": "henk",
+        "id": 235503
+      },
+      {
+        "name": "ZAP.Continuelimiet.1",
+        "id": 152504
+      },
+      {
+        "name": "ZAP.Zakelijk_PPC.1",
+        "id": 153539
+      },
+      {
+        "name": "ZAP.BetalenTBIC.1",
+        "id": 152524
+      },
+      {
+        "name": "Expat.Demo",
+        "id": 179501
+      },
+      {
+        "name": "ZAP.Webhelp_Navraag_MING.1",
+        "id": 153521
+      },
+      {
+        "name": "ZAP.Zakelijk_iDeal.1",
+        "id": 153535
+      },
+      {
+        "name": "ZAP.Rentepunten.1",
+        "id": 152547
+      },
+      {
+        "name": "LEN.Risicobeheer.0",
+        "id": 321
+      },
+      {
+        "name": "ZAP.Zakelijk_DVB_Incasso.0",
+        "id": 153528
+      },
+      {
+        "name": "ZAP.Betaalpassen.1",
+        "id": 152510
+      },
+      {
+        "name": "ZAP.BetalenSparenIVR.1",
+        "id": 152522
+      },
+      {
+        "name": "LEN.Watchlist.0",
+        "id": 333
+      },
+      {
+        "name": "ZAP.Zakelijk_MING2elijn.1",
+        "id": 153537
+      },
+      {
+        "name": "KAP.aanvragen_1ste_lijn_CMN.0",
+        "id": 312
+      },
+      {
+        "name": "ZAP.Helpdesk_Zak_SCA.0",
+        "id": 247504
+      },
+      {
+        "name": "ZAP.Default.0",
+        "id": 152527
+      },
+      {
+        "name": "LEN.Grootzakelijk_PPW.2",
+        "id": 320
+      },
+      {
+        "name": "ZAP.Helpdesk_SCA.0",
+        "id": 247501
+      },
+      {
+        "name": "ZAP.BetalenAfschriften.0",
+        "id": 152519
+      },
+      {
+        "name": "LEN.Watchlist.2",
+        "id": 335
+      },
+      {
+        "name": "testCampaign",
+        "id": 7051
+      },
+      {
+        "name": "ZAP.Helpdesk_TAN.0",
+        "id": 152532
+      },
+      {
+        "name": "ZAP.Zakelijk_PPC.0",
+        "id": 153538
+      },
+      {
+        "name": "LEN.Risicobeheer_1.0",
+        "id": 324
+      },
+      {
+        "name": "LEN.Actualisatie.0",
+        "id": 330
+      },
+      {
+        "name": "ZAP.Studenten.0",
+        "id": 153516
+      },
+      {
+        "name": "KAP.beheer_1ste_lijn.1",
+        "id": 311
+      },
+      {
+        "name": "ZAP.Betalen_Opheffen.1",
+        "id": 152516
+      },
+      {
+        "name": "ZAP.Continuelimiet.0",
+        "id": 152503
+      },
+      {
+        "name": "ZAP.Kwartaallimiet.1",
+        "id": 152541
+      },
+      {
+        "name": "LEN.Hypotheken.1",
+        "id": 340
+      },
+      {
+        "name": "ZAP.Betaalpassen.0",
+        "id": 152509
+      },
+      {
+        "name": "ZAP.SLK-Particulieren.0",
+        "id": 153510
+      },
+      {
+        "name": "ZAP.Studenten.1",
+        "id": 153517
+      },
+      {
+        "name": "ZAP.BetalenAfschriften.1",
+        "id": 152520
+      },
+      {
+        "name": "LEN.Taskforce_JO-INA.1",
+        "id": 502
+      },
+      {
+        "name": "receive-email",
+        "id": 79500
+      },
+      {
+        "name": "LEN.Audits-Systems.1",
+        "id": 355
+      },
+      {
+        "name": "some-skills",
+        "id": 78450
+      },
+      {
+        "name": "LEN.Juridische_Omzettingen.1",
+        "id": 337
+      },
+      {
+        "name": "ZAP.Helpdesk-2de-lijn.0",
+        "id": 152534
+      },
+      {
+        "name": "ZAP.SDN_Algemeen.0",
+        "id": 153502
+      },
+      {
+        "name": "Modification",
+        "id": 172500
+      },
+      {
+        "name": "FRD.Begunstigden_Bezwaren.0",
+        "id": 223500
+      },
+      {
+        "name": "Twix",
+        "id": 295500
+      },
+      {
+        "name": "LEN.Hypotheken.0",
+        "id": 339
+      },
+      {
+        "name": "HYP.cct1.1",
+        "id": 286501
+      },
+      {
+        "name": "ZAP.Zakelijk_ART.1",
+        "id": 153523
+      },
+      {
+        "name": "LEN.Operations_Specialist.2",
+        "id": 359
+      },
+      {
+        "name": "LEN.Quality_Assurance.0",
+        "id": 351
+      },
+      {
+        "name": "ZAP.Betalen.1",
+        "id": 152512
+      },
+      {
+        "name": "KAP.2de_lijn.0",
+        "id": 316
+      },
+      {
+        "name": "ZAP.SLK-WijzigenEnBetaalpas.1",
+        "id": 153513
+      },
+      {
+        "name": "ZAP.RR-Bewinden.1",
+        "id": 153501
+      },
+      {
+        "name": "LEN.Risicobeheer_2.2",
+        "id": 329
+      },
+      {
+        "name": "ZAP.Sparen.0",
+        "id": 153514
+      },
+      {
+        "name": "Make.a.thon",
+        "id": 275500
+      },
+      {
+        "name": "ZAP.KV-Cards_CorporateCards.1",
+        "id": 276509
+      },
+      {
+        "name": "ZAP.Helpdesk_App.0",
+        "id": 152530
+      },
+      {
+        "name": "ZAP.KV-Cards_Finance.0",
+        "id": 276504
+      },
+      {
+        "name": "Iris_NPA1.0",
+        "id": 272500
+      }
+    ]
+  },
+  {
+    "name": "channels",
+    "id": 2,
+    "values": [
+      {
+        "name": "Chat",
+        "id": 101
+      },
+      {
+        "name": "Dialer",
+        "id": 6053
+      },
+      {
+        "name": "Call",
+        "id": 102
+      },
+      {
+        "name": "Video",
+        "id": 103
+      },
+      {
+        "name": "Messaging",
+        "id": 140550
+      }
+    ]
+  },
+  {
+    "name": "languages",
+    "id": 3,
+    "values": [
+      {
+        "name": "NL",
+        "id": 113
+      },
+      {
+        "name": "FR",
+        "id": 114
+      },
+      {
+        "name": "EN",
+        "id": 172502
+      }
+    ]
+  },
+  {
+    "name": "phone-number",
+    "id": 4050,
+    "values": [
+      {
+        "name": "31681694806",
+        "id": 288501
+      },
+      {
+        "name": "121121",
+        "id": 159501
+      },
+      {
+        "name": "abc",
+        "id": 159502
+      }
+    ]
+  },
+  {
+    "name": "campaigns",
+    "id": 88,
+    "values": [
+      {
+        "name": "dialer.demo.271b80e1",
+        "id": 112505
+      },
+      {
+        "name": "test1411.aabe35d1",
+        "id": 261550
+      },
+      {
+        "name": "asfsdfdfsdf.3173b092",
+        "id": 39507
+      },
+      {
+        "name": "yellow_campaign",
+        "id": 21110
+      },
+      {
+        "name": "test.7703f119",
+        "id": 166500
+      },
+      {
+        "name": "aaaa.aea8e828",
+        "id": 111451
+      },
+      {
+        "name": "ctcampaign_manager.0469457c",
+        "id": 41451
+      },
+      {
+        "name": "sprint.demo.del.902fdc2c",
+        "id": 58501
+      },
+      {
+        "name": "e2ecampaigntemp.2cfd0de7",
+        "id": 86501
+      },
+      {
+        "name": "assaf.a3b442ec",
+        "id": 35451
+      },
+      {
+        "name": "rm_tq2.6e02aa15",
+        "id": 126502
+      },
+      {
+        "name": "e2ecampaign.1660b424",
+        "id": 54501
+      },
+      {
+        "name": "test14_02.8731afaf",
+        "id": 180533
+      },
+      {
+        "name": "stability.1533f394",
+        "id": 70452
+      },
+      {
+        "name": "tom.de.bom.96aa88fa",
+        "id": 45503
+      },
+      {
+        "name": "multiple.campaigns.ca434058",
+        "id": 70457
+      },
+      {
+        "name": "testsetest.15c1fbb0",
+        "id": 54451
+      },
+      {
+        "name": "HieperdeHoiUniekerisimo",
+        "id": 23062
+      },
+      {
+        "name": "TestjeCampaigntje",
+        "id": 22050
+      },
+      {
+        "name": "jago.1a1fc09c",
+        "id": 88453
+      },
+      {
+        "name": "toms.campaign.uno.d3238137",
+        "id": 24155
+      },
+      {
+        "name": "deletemebro.aec1b07b",
+        "id": 143650
+      },
+      {
+        "name": "test.20180122.200e4e29",
+        "id": 49450
+      },
+      {
+        "name": "ietestje.02336887",
+        "id": 35550
+      },
+      {
+        "name": "test62.e4e44ede",
+        "id": 178500
+      },
+      {
+        "name": "testnewtoolbar.68cf9d33",
+        "id": 133550
+      },
+      {
+        "name": "Lodewijk",
+        "id": 23059
+      },
+      {
+        "name": "test1worklfow2.e5978140",
+        "id": 142500
+      },
+      {
+        "name": "e2ecampaigntemp.95d155fd",
+        "id": 138503
+      },
+      {
+        "name": "MyyyCampainos",
+        "id": 22100
+      },
+      {
+        "name": "aaaggg",
+        "id": 22101
+      },
+      {
+        "name": "patrickcm1.c1ecd1a9",
+        "id": 29200
+      },
+      {
+        "name": "wesley.auto.accept.726567d8",
+        "id": 39456
+      },
+      {
+        "name": "test1workflow.1cbc1c85",
+        "id": 141550
+      },
+      {
+        "name": "campaigns12",
+        "id": 11
+      },
+      {
+        "name": "twitel.test.3eb7dfda",
+        "id": 270500
+      },
+      {
+        "name": "test25032.f8acfebf",
+        "id": 291895
+      },
+      {
+        "name": "e2ecampaigntemp.83176122",
+        "id": 138509
+      },
+      {
+        "name": "patrick2.663180ec",
+        "id": 28201
+      },
+      {
+        "name": "scat.campaign.396d2171",
+        "id": 26101
+      },
+      {
+        "name": "jago.aef336c3",
+        "id": 73450
+      },
+      {
+        "name": "demo.campaign.7b954bb9",
+        "id": 123500
+      },
+      {
+        "name": "test.wesley.201901.af350b8b",
+        "id": 171500
+      },
+      {
+        "name": "e2ecampaigntemp.b1fb4591",
+        "id": 138550
+      },
+      {
+        "name": "futianming.558bb335",
+        "id": 284500
+      },
+      {
+        "name": "toms.test.7968fb20",
+        "id": 108451
+      },
+      {
+        "name": "wesley2.782c8796",
+        "id": 24106
+      },
+      {
+        "name": "wesley1.d7e28537",
+        "id": 24109
+      },
+      {
+        "name": "12345.ea6ca168",
+        "id": 39501
+      },
+      {
+        "name": "deleteme3.5a254b16",
+        "id": 130507
+      },
+      {
+        "name": "campaigns8",
+        "id": 5
+      },
+      {
+        "name": "removethis.11ff70cf",
+        "id": 76450
+      },
+      {
+        "name": "authtoken.7af19a47",
+        "id": 278500
+      },
+      {
+        "name": "be.campaign.201711.8d0976f9",
+        "id": 37450
+      },
+      {
+        "name": "testtom1.f547aaeb",
+        "id": 54500
+      },
+      {
+        "name": "test.pacing.nan.20.0bbd1ed9",
+        "id": 41502
+      },
+      {
+        "name": "wesley.test.201711.dc57ab7a",
+        "id": 41450
+      },
+      {
+        "name": "test8_03.a283a4a6",
+        "id": 188504
+      },
+      {
+        "name": "gertjancampagne.39b4b887",
+        "id": 198523
+      },
+      {
+        "name": "gjcompagner.7201aecf",
+        "id": 39508
+      },
+      {
+        "name": "testcampaignattrib.f990998a",
+        "id": 150563
+      },
+      {
+        "name": "taskqueuefn.e9994f8e",
+        "id": 115500
+      },
+      {
+        "name": "copy.of.frontend.t.3f3bb3ee",
+        "id": 45552
+      },
+      {
+        "name": "e2ecampaigntemp.43b82bed",
+        "id": 138500
+      },
+      {
+        "name": "martinstest.133cf45a",
+        "id": 175500
+      },
+      {
+        "name": "regtest20180527.315b1919",
+        "id": 107450
+      },
+      {
+        "name": "campaigns15",
+        "id": 21116
+      },
+      {
+        "name": "testtaskqueue.504d5d6a",
+        "id": 116500
+      },
+      {
+        "name": "rm_tq3.b9819603",
+        "id": 128504
+      },
+      {
+        "name": "testdezekanweg.19164f1f",
+        "id": 49456
+      },
+      {
+        "name": "test0810.07a3a14e",
+        "id": 247507
+      },
+      {
+        "name": "confidencecheck201.02ad90b1",
+        "id": 91450
+      },
+      {
+        "name": "martinbug2.e65e39b8",
+        "id": 282500
+      },
+      {
+        "name": "sdfsdsdff.2dc79580",
+        "id": 54450
+      },
+      {
+        "name": "test1.a1a6faca",
+        "id": 32200
+      },
+      {
+        "name": "test.team.filter.2.6881e31d",
+        "id": 45550
+      },
+      {
+        "name": "vertel.het.me.5a779da4",
+        "id": 35500
+      },
+      {
+        "name": "wesley201711221.a043ef3e",
+        "id": 39503
+      },
+      {
+        "name": "mycampaign.25169ecf",
+        "id": 39451
+      },
+      {
+        "name": "campagne.mycampfdame.14521521",
+        "id": 24055
+      },
+      {
+        "name": "testfordinesh2.6109bd83",
+        "id": 51450
+      },
+      {
+        "name": "e2ecampaigntemp.9b2da047",
+        "id": 138501
+      },
+      {
+        "name": "normaalwoord",
+        "id": 23106
+      },
+      {
+        "name": "test.frontend.2017.6fd1fbda",
+        "id": 44502
+      },
+      {
+        "name": "e2ecampaigntemp.9588bb39",
+        "id": 86506
+      },
+      {
+        "name": "fsdf.5c82946d",
+        "id": 45502
+      },
+      {
+        "name": "e2ecampaigntemp.47493dc6",
+        "id": 138508
+      },
+      {
+        "name": "wesley20171009.0435b7fd",
+        "id": 33250
+      },
+      {
+        "name": "sprint.demo.0805.363bc36f",
+        "id": 89451
+      },
+      {
+        "name": "wesley.test.201711.fe3ffa29",
+        "id": 40452
+      },
+      {
+        "name": "rm_tq16.c7132d91",
+        "id": 129527
+      },
+      {
+        "name": "confidencecheck201.9cc3b730",
+        "id": 95451
+      },
+      {
+        "name": "aaaa115",
+        "id": 115
+      },
+      {
+        "name": "e2ecampaigntemp1.05b00d45",
+        "id": 143600
+      },
+      {
+        "name": "delete.this.b3dc5331",
+        "id": 81503
+      },
+      {
+        "name": "test0107.cb4263f9",
+        "id": 222500
+      },
+      {
+        "name": "wesley.201781122.2f67a845",
+        "id": 39502
+      },
+      {
+        "name": "qweqwe.3262a5f2",
+        "id": 39504
+      },
+      {
+        "name": "cr_test4.a2fa2f3f",
+        "id": 43450
+      },
+      {
+        "name": "multiple.teams.clt.50f8c391",
+        "id": 71451
+      },
+      {
+        "name": "regtest20180629.6d36b4dc",
+        "id": 108450
+      },
+      {
+        "name": "test.20171215.833f5e8b",
+        "id": 44454
+      },
+      {
+        "name": "e2e_campaign.11ff7f5b",
+        "id": 50452
+      },
+      {
+        "name": "e2ecampaigntemp.0fa7adbd",
+        "id": 50453
+      },
+      {
+        "name": "test2106.b7a9b264",
+        "id": 219550
+      },
+      {
+        "name": "callfowresilienceb.2f2c9ec6",
+        "id": 293500
+      },
+      {
+        "name": "anothercampaign.c7c9e6ed",
+        "id": 24108
+      },
+      {
+        "name": "confidencecheck201.f920edc2",
+        "id": 72502
+      },
+      {
+        "name": "rm_tq.05af6a63",
+        "id": 126501
+      },
+      {
+        "name": "e2ecampaigntemp.d035edcb",
+        "id": 138553
+      },
+      {
+        "name": "frontend.fix.20171.f4b466ba",
+        "id": 44455
+      },
+      {
+        "name": "e2ecampaigntemp.56e51d56",
+        "id": 86503
+      },
+      {
+        "name": "test33.a98eea25",
+        "id": 200503
+      },
+      {
+        "name": "gjc.869af5c3",
+        "id": 93450
+      },
+      {
+        "name": "copy.of.test.agent.d23b4c1b",
+        "id": 45651
+      },
+      {
+        "name": "jago.v2.ac0bd5df",
+        "id": 73500
+      },
+      {
+        "name": "byewmcahgd.9c30221c",
+        "id": 37451
+      },
+      {
+        "name": "test.20180412.24f8271d",
+        "id": 83453
+      },
+      {
+        "name": "ctcampaign.manager.87d8ea46",
+        "id": 40451
+      },
+      {
+        "name": "cr_test2.dc9b70cd",
+        "id": 41506
+      },
+      {
+        "name": "jago2.b8523826",
+        "id": 44504
+      },
+      {
+        "name": "bob.338a2d8b",
+        "id": 172504
+      },
+      {
+        "name": "feb.2019.66cca575",
+        "id": 58500
+      },
+      {
+        "name": "campaf2a",
+        "id": 24051
+      },
+      {
+        "name": "aaaa1156",
+        "id": 21121
+      },
+      {
+        "name": "myenterosnamos.289e2d8c",
+        "id": 32250
+      },
+      {
+        "name": "jago.task.test.f2d84d16",
+        "id": 115451
+      },
+      {
+        "name": "testttttt.f4f725fa",
+        "id": 206500
+      },
+      {
+        "name": "wesley20171012.43751d09",
+        "id": 33450
+      },
+      {
+        "name": "e2ecampaigntemp.881542ca",
+        "id": 138506
+      },
+      {
+        "name": "campaigns156",
+        "id": 21119
+      },
+      {
+        "name": "rm_tq10.c1c04090",
+        "id": 130503
+      },
+      {
+        "name": "mycampaign.e5847238",
+        "id": 39500
+      },
+      {
+        "name": "cr_test6.f145ab68",
+        "id": 43500
+      },
+      {
+        "name": "toms.mooie.campagn.dc8a5863",
+        "id": 24154
+      },
+      {
+        "name": "tella.2a6c40de",
+        "id": 49455
+      },
+      {
+        "name": "scat.campaign.eaa905a2",
+        "id": 26050
+      },
+      {
+        "name": "campaign20171205.1ee22e18",
+        "id": 42452
+      },
+      {
+        "name": "testBeau",
+        "id": 298501
+      },
+      {
+        "name": "e2ecampaigntemp.c9af3101",
+        "id": 83501
+      },
+      {
+        "name": "asd.b508970b",
+        "id": 32203
+      },
+      {
+        "name": "jago1.5d7b5735",
+        "id": 44457
+      },
+      {
+        "name": "tella.test.346cdc46",
+        "id": 46450
+      },
+      {
+        "name": "yapraktestcampaign.f70c5560",
+        "id": 261500
+      },
+      {
+        "name": "e2ecampaigntemp.13b94100",
+        "id": 86551
+      },
+      {
+        "name": "wesley1.729b2789",
+        "id": 31301
+      },
+      {
+        "name": "e2ecampaigntemp.28ddff79",
+        "id": 135503
+      },
+      {
+        "name": "e2ecampaigntemp.a5006153",
+        "id": 142551
+      },
+      {
+        "name": "wesley2.9df3d10f",
+        "id": 26104
+      },
+      {
+        "name": "datla_test1.a7e8270a",
+        "id": 280501
+      },
+      {
+        "name": "test.d903a2af",
+        "id": 44456
+      },
+      {
+        "name": "lalalala.8f069cb5",
+        "id": 33300
+      },
+      {
+        "name": "dialerstory.campai.f9eb12cd",
+        "id": 68450
+      },
+      {
+        "name": "1deleteme1.730102e9",
+        "id": 143651
+      },
+      {
+        "name": "test.20180413.e3e3940f",
+        "id": 84450
+      },
+      {
+        "name": "permissiontest.e8d6a396",
+        "id": 190502
+      },
+      {
+        "name": "langlanglanglangla.1e546f53",
+        "id": 24151
+      },
+      {
+        "name": "test2610.b3767164",
+        "id": 154500
+      },
+      {
+        "name": "test_jago.47a47db1",
+        "id": 51451
+      },
+      {
+        "name": "deleteme2.e306d28b",
+        "id": 56455
+      },
+      {
+        "name": "test.20180406.796dce68",
+        "id": 80551
+      },
+      {
+        "name": "wesley1.f899b004",
+        "id": 24105
+      },
+      {
+        "name": "sdfasdfsdf.60bbf990",
+        "id": 39461
+      },
+      {
+        "name": "test.tom.23.2.5fe878ee",
+        "id": 62500
+      },
+      {
+        "name": "e2ecampaigntemp.2988a46d",
+        "id": 138513
+      },
+      {
+        "name": "multitaskingtest.8456a360",
+        "id": 112501
+      },
+      {
+        "name": "intranet.documenta.b0a300a6",
+        "id": 44508
+      },
+      {
+        "name": "testcampaign.f8f7b59c",
+        "id": 26106
+      },
+      {
+        "name": "deletethis.b95c6804",
+        "id": 92450
+      },
+      {
+        "name": "martinbug.21d5ce2b",
+        "id": 281500
+      },
+      {
+        "name": "createthatnewcampa.883d4e3b",
+        "id": 43452
+      },
+      {
+        "name": "piet1.c7fc8273",
+        "id": 112500
+      },
+      {
+        "name": "eris_test.114a94a8",
+        "id": 152501
+      },
+      {
+        "name": "anothercampaign.9db0ac36",
+        "id": 289501
+      },
+      {
+        "name": "avinash_test.c3e28f26",
+        "id": 300500
+      },
+      {
+        "name": "resize1.cb0c7909",
+        "id": 44461
+      },
+      {
+        "name": "newretentionperiod.eb896b74",
+        "id": 117500
+      },
+      {
+        "name": "dieene.b7d57cc7",
+        "id": 131503
+      },
+      {
+        "name": "test.agent.filter.9325897a",
+        "id": 45601
+      },
+      {
+        "name": "testcampaign1.6e40d543",
+        "id": 32205
+      },
+      {
+        "name": "xyz1234.64ddf23f",
+        "id": 135550
+      },
+      {
+        "name": "regtest.20180710.b982cec6",
+        "id": 111450
+      },
+      {
+        "name": "fu.tian.ming.d014624e",
+        "id": 279500
+      },
+      {
+        "name": "wesley201710102.7ed3b826",
+        "id": 33400
+      },
+      {
+        "name": "interactingcampaig.68bfba3a",
+        "id": 235500
+      },
+      {
+        "name": "patrickje.cfdd0066",
+        "id": 30201
+      },
+      {
+        "name": "rm_tq6.7cb70937",
+        "id": 129523
+      },
+      {
+        "name": "tests.db1f0ea4",
+        "id": 89450
+      },
+      {
+        "name": "copy.of.twitel.tes.54fd3f42",
+        "id": 276501
+      },
+      {
+        "name": "mycampaign.4e6f55cf",
+        "id": 39450
+      },
+      {
+        "name": "e2ecampaigntemp.8e107f7c",
+        "id": 138510
+      },
+      {
+        "name": "testcampaigncallfl.84046d3e",
+        "id": 216500
+      },
+      {
+        "name": "ttttttt.306e92d9",
+        "id": 150562
+      },
+      {
+        "name": "sdgfasdgdasgasd",
+        "id": 23052
+      },
+      {
+        "name": "testtaskqueue2.604c5c90",
+        "id": 116550
+      },
+      {
+        "name": "temp.a6ddda29",
+        "id": 85450
+      },
+      {
+        "name": "wesley2.62e02704",
+        "id": 24110
+      },
+      {
+        "name": "e2ecampaigntemp.fb538568",
+        "id": 138505
+      },
+      {
+        "name": "test.8492cb33",
+        "id": 117501
+      },
+      {
+        "name": "test2003.34b82afc",
+        "id": 287500
+      },
+      {
+        "name": "patrick.3aed4b7f",
+        "id": 24152
+      },
+      {
+        "name": "sdfasdfgdsafdsa",
+        "id": 23201
+      },
+      {
+        "name": "tella.398c85d1",
+        "id": 56500
+      },
+      {
+        "name": "scat.campaign.eb3a679e",
+        "id": 198503
+      },
+      {
+        "name": "patrick1.aa8d9f3b",
+        "id": 28100
+      },
+      {
+        "name": "test2303.a080e80d",
+        "id": 290500
+      },
+      {
+        "name": "campaigns11",
+        "id": 10
+      },
+      {
+        "name": "campaign.with.stra.647006e9",
+        "id": 24107
+      },
+      {
+        "name": "test201804063.eb90f8bc",
+        "id": 80553
+      },
+      {
+        "name": "sdfsdfasdfsdf.bf4b29cf",
+        "id": 39460
+      },
+      {
+        "name": "confidencecheck201.9d246b87",
+        "id": 88451
+      },
+      {
+        "name": "dfsfdd.f48ccb87",
+        "id": 45452
+      },
+      {
+        "name": "lddlydlyudlyudlyu",
+        "id": 23203
+      },
+      {
+        "name": "patrick1.ff8794c1",
+        "id": 28150
+      },
+      {
+        "name": "test1611.39f98712",
+        "id": 262500
+      },
+      {
+        "name": "multiple.teams.1.f937277e",
+        "id": 69450
+      },
+      {
+        "name": "rm_tq12.9f42a61e",
+        "id": 130504
+      },
+      {
+        "name": "testcampagincreati.ffa3ac4d",
+        "id": 56451
+      },
+      {
+        "name": "sdfsdfsdf.7c020307",
+        "id": 39459
+      },
+      {
+        "name": "xyz123.bb390a6b",
+        "id": 133551
+      },
+      {
+        "name": "rick_test.6c7d907e",
+        "id": 197500
+      },
+      {
+        "name": "e2ecampaign.96ee18d8",
+        "id": 86552
+      },
+      {
+        "name": "sandercampaign.477646fe",
+        "id": 276500
+      },
+      {
+        "name": "e2ecampaign.c9c76554",
+        "id": 53451
+      },
+      {
+        "name": "test.20180123.d9123cf6",
+        "id": 50451
+      },
+      {
+        "name": "MyCAsdfa1234215",
+        "id": 23153
+      },
+      {
+        "name": "e2ecampaigntemp.71940e9c",
+        "id": 100450
+      },
+      {
+        "name": "orange.list.9c018bb0",
+        "id": 24156
+      },
+      {
+        "name": "avinash_22.fe8ba172",
+        "id": 160500
+      },
+      {
+        "name": "test1302.57e9cdf2",
+        "id": 276550
+      },
+      {
+        "name": "sdfsdf.e93d4f70",
+        "id": 39506
+      },
+      {
+        "name": "test0105.f824094e",
+        "id": 301500
+      },
+      {
+        "name": "e2ecampaigntemp.4d309cae",
+        "id": 134551
+      },
+      {
+        "name": "regtest20180527.ecfaf645",
+        "id": 107500
+      },
+      {
+        "name": "test201806042.cf4812f3",
+        "id": 80552
+      },
+      {
+        "name": "drop.test.20180202.74461754",
+        "id": 56450
+      },
+      {
+        "name": "e2ecampaigntemp.8179b450",
+        "id": 83455
+      },
+      {
+        "name": "jordy2",
+        "id": 23055
+      },
+      {
+        "name": "test0312.2ed893f5",
+        "id": 266512
+      },
+      {
+        "name": "eris.testcampaign..4749abdb",
+        "id": 36450
+      },
+      {
+        "name": "test0410.110c025a",
+        "id": 247500
+      },
+      {
+        "name": "frontend.test.2017.d9db7b55",
+        "id": 44507
+      },
+      {
+        "name": "jago2.903bd6cc",
+        "id": 88454
+      },
+      {
+        "name": "e2ecampaigntemp.2622678c",
+        "id": 138551
+      },
+      {
+        "name": "e2ecampaigntemp.e0a252db",
+        "id": 134552
+      },
+      {
+        "name": "tom.de.bom.73f99768",
+        "id": 45504
+      },
+      {
+        "name": "Lodeweijk",
+        "id": 23109
+      },
+      {
+        "name": "wesley.test.201711.68a9a7d3",
+        "id": 39510
+      },
+      {
+        "name": "tom3.ec0bf95f",
+        "id": 112504
+      },
+      {
+        "name": "tallyman.integrati.c4465af7",
+        "id": 44453
+      },
+      {
+        "name": "ucr.46caea24",
+        "id": 26150
+      },
+      {
+        "name": "test0412.a0ba3083",
+        "id": 266513
+      },
+      {
+        "name": "test20032.0bacf76f",
+        "id": 287501
+      },
+      {
+        "name": "campagne.wesley1.c949b166",
+        "id": 24101
+      },
+      {
+        "name": "tella.8116ec61",
+        "id": 304501
+      },
+      {
+        "name": "testwd.7ce3e34e",
+        "id": 114450
+      },
+      {
+        "name": "jago7.d6a81eb3",
+        "id": 44460
+      },
+      {
+        "name": "asdfdsafdsafadsfads",
+        "id": 23202
+      },
+      {
+        "name": "Eeeeeeey",
+        "id": 23056
+      },
+      {
+        "name": "test.cm.20180228.d3a059d2",
+        "id": 65451
+      },
+      {
+        "name": "tim.f5a6747b",
+        "id": 196500
+      },
+      {
+        "name": "tom.faab4ed1",
+        "id": 74500
+      },
+      {
+        "name": "testvmbutton.e09c35c8",
+        "id": 155500
+      },
+      {
+        "name": "jago.8a31f33f",
+        "id": 74450
+      },
+      {
+        "name": "cr_test5.9d17cbf3",
+        "id": 43451
+      },
+      {
+        "name": "jago.v3.6b369df4",
+        "id": 73501
+      },
+      {
+        "name": "wesley3.e4e12c17",
+        "id": 26100
+      },
+      {
+        "name": "e2ecampaigntemp.6bb19a47",
+        "id": 86502
+      },
+      {
+        "name": "test1workflow4.957ec073",
+        "id": 141551
+      },
+      {
+        "name": "rm_tq14.3b680577",
+        "id": 129525
+      },
+      {
+        "name": "testcallflows.03248f5f",
+        "id": 112502
+      },
+      {
+        "name": "cr_test1.a4ff4369",
+        "id": 42451
+      },
+      {
+        "name": "deleteme4.c171c69a",
+        "id": 129531
+      },
+      {
+        "name": "piet1.1b4d799f",
+        "id": 112451
+      },
+      {
+        "name": "test.tpa.cluster.8bc00fb2",
+        "id": 47451
+      },
+      {
+        "name": "wesley2.e946375f",
+        "id": 24104
+      },
+      {
+        "name": "test1337.a1202dca",
+        "id": 121500
+      },
+      {
+        "name": "test0710.813f1632",
+        "id": 247506
+      },
+      {
+        "name": "mycampianopatr.ac4d533e",
+        "id": 30300
+      },
+      {
+        "name": "rm_tq5.0a1f9590",
+        "id": 128506
+      },
+      {
+        "name": "e2ecampaigntemp.7b514bdf",
+        "id": 135500
+      },
+      {
+        "name": "test1303.1f7abc70",
+        "id": 286503
+      },
+      {
+        "name": "sdgfasdsadfdasgasd",
+        "id": 23053
+      },
+      {
+        "name": "tallymansecured.ya.c289252d",
+        "id": 203500
+      },
+      {
+        "name": "taskquetest2018072.2345e07e",
+        "id": 115453
+      },
+      {
+        "name": "tella.test.32158b57",
+        "id": 167533
+      },
+      {
+        "name": "e2ecampaigntemp.d6118e0a",
+        "id": 138514
+      },
+      {
+        "name": "requestrecording.0e46c395",
+        "id": 183500
+      },
+      {
+        "name": "copy.of.test.agent.af53c7e6",
+        "id": 45650
+      },
+      {
+        "name": "Harry",
+        "id": 23057
+      },
+      {
+        "name": "campaign5ss15",
+        "id": 21123
+      },
+      {
+        "name": "Bassie",
+        "id": 23060
+      },
+      {
+        "name": "tom2.5f5867b4",
+        "id": 113454
+      },
+      {
+        "name": "rm_tq18.e272a055",
+        "id": 129529
+      },
+      {
+        "name": "testfordinesh.82e80fa3",
+        "id": 50454
+      },
+      {
+        "name": "e2ecampaigntemp.231ef052",
+        "id": 142602
+      },
+      {
+        "name": "yelldo_campaign",
+        "id": 6054
+      },
+      {
+        "name": "rm_tq7.5339a1af",
+        "id": 130500
+      },
+      {
+        "name": "jago6.d052ca71",
+        "id": 44459
+      },
+      {
+        "name": "wesley.20171005.3e366ef0",
+        "id": 32202
+      },
+      {
+        "name": "wesley1.6104131c",
+        "id": 24103
+      },
+      {
+        "name": "rm_tq15.9f36f651",
+        "id": 129526
+      },
+      {
+        "name": "test.de.test.65a94b2d",
+        "id": 59450
+      },
+      {
+        "name": "e2ecampaigntemp.58427830",
+        "id": 49457
+      },
+      {
+        "name": "test111.390751ee",
+        "id": 115452
+      },
+      {
+        "name": "avinash_test.7a1c14f6",
+        "id": 212507
+      },
+      {
+        "name": "frontend.test2.201.9f963c18",
+        "id": 44503
+      },
+      {
+        "name": "retentionperiodtes.49353e1c",
+        "id": 117502
+      },
+      {
+        "name": "test20033.98f34573",
+        "id": 288500
+      },
+      {
+        "name": "check.bye.bye.9c145b3f",
+        "id": 112506
+      },
+      {
+        "name": "e2ecampaigntemp.b9ee4819",
+        "id": 86504
+      },
+      {
+        "name": "testcampaignattrib.c3af8df5",
+        "id": 149500
+      },
+      {
+        "name": "campagne.mycampafdame.14521521",
+        "id": 24053
+      },
+      {
+        "name": "cr_test3.591f2086",
+        "id": 42453
+      },
+      {
+        "name": "toms.mooie.campagn.d7ea1070",
+        "id": 24153
+      },
+      {
+        "name": "test2506.08db1546",
+        "id": 220503
+      },
+      {
+        "name": "test9112018.536d54aa",
+        "id": 157500
+      },
+      {
+        "name": "bobtestcampaign2.7f9dd1bf",
+        "id": 155501
+      },
+      {
+        "name": "test1_5.1ba0f11e",
+        "id": 205500
+      },
+      {
+        "name": "mooiecampaigndankj.bf81ceb1",
+        "id": 26151
+      },
+      {
+        "name": "e2ecampaigntemp.53ae01ae",
+        "id": 134550
+      },
+      {
+        "name": "e2ecampaigntemp.d00e9fc6",
+        "id": 137600
+      },
+      {
+        "name": "testutcwesley.aa9f25e6",
+        "id": 200504
+      },
+      {
+        "name": "deleteme2.e709679e",
+        "id": 130506
+      },
+      {
+        "name": "jordy",
+        "id": 23103
+      },
+      {
+        "name": "e2ecampaign.d2b734c0",
+        "id": 49453
+      },
+      {
+        "name": "jago.9a08b5ab",
+        "id": 88450
+      },
+      {
+        "name": "campaignss",
+        "id": 15
+      },
+      {
+        "name": "campaignqrc.7a156ddc",
+        "id": 113464
+      },
+      {
+        "name": "e2ecampaigntemp.2a66f517",
+        "id": 86550
+      },
+      {
+        "name": "e2ecampaigntemp.e2ee428a",
+        "id": 83502
+      },
+      {
+        "name": "bobtestcampaign.1c8434bf",
+        "id": 150564
+      },
+      {
+        "name": "regtest20180716.27b43a03",
+        "id": 112503
+      },
+      {
+        "name": "test.team.filter.3cb6d3da",
+        "id": 45600
+      },
+      {
+        "name": "testnewtoolbar.e76fec23",
+        "id": 130509
+      },
+      {
+        "name": "test123.16a4fc00",
+        "id": 129532
+      },
+      {
+        "name": "user.manual.campai.dc194f49",
+        "id": 25300
+      },
+      {
+        "name": "jordy1",
+        "id": 23104
+      },
+      {
+        "name": "copy.of.tim.4aba5c7e",
+        "id": 70451
+      },
+      {
+        "name": "test.20180228.e7c38439",
+        "id": 65450
+      },
+      {
+        "name": "wesley20180704.b507e1b7",
+        "id": 109465
+      },
+      {
+        "name": "dfsfdd.812da0d7",
+        "id": 45501
+      },
+      {
+        "name": "firstcampaign.5ee5cf37",
+        "id": 40450
+      },
+      {
+        "name": "newmyhi123.2531fec3",
+        "id": 31300
+      },
+      {
+        "name": "zul_twitel_test.13adc5a7",
+        "id": 240500
+      },
+      {
+        "name": "kort.e0cd203b",
+        "id": 24102
+      },
+      {
+        "name": "newcampaignwithtim.2790308a",
+        "id": 44450
+      },
+      {
+        "name": "wesleytestdelete.baa5213d",
+        "id": 188503
+      },
+      {
+        "name": "e2ecampaigntemp.9f24ba57",
+        "id": 138512
+      },
+      {
+        "name": "wesleytestangular.85531744",
+        "id": 257500
+      },
+      {
+        "name": "deletemebro.182a80a2",
+        "id": 143551
+      },
+      {
+        "name": "test1205.5e38e946",
+        "id": 304500
+      },
+      {
+        "name": "IkMaakEenNieuweUniekeCampaign",
+        "id": 23150
+      },
+      {
+        "name": "wesley1.eba0440f",
+        "id": 26103
+      },
+      {
+        "name": "test2.09c50eac",
+        "id": 32301
+      },
+      {
+        "name": "NewCampaignos",
+        "id": 23151
+      },
+      {
+        "name": "rm_tq17.3e45925c",
+        "id": 129528
+      },
+      {
+        "name": "copy.of.cr_test6.bf55e032",
+        "id": 47450
+      },
+      {
+        "name": "sprint.demo.2.b497fe50",
+        "id": 89453
+      },
+      {
+        "name": "testtaskqueue.9d666366",
+        "id": 97450
+      },
+      {
+        "name": "dfsfd.80e74aaa",
+        "id": 45451
+      },
+      {
+        "name": "test.jago.jan.ac191c03",
+        "id": 54550
+      },
+      {
+        "name": "e2ecampaign.a769e934",
+        "id": 53450
+      },
+      {
+        "name": "test.f13e02ec",
+        "id": 39457
+      },
+      {
+        "name": "tim.8da399fb",
+        "id": 70450
+      },
+      {
+        "name": "campaignvanruud.ea4ccdb1",
+        "id": 245500
+      },
+      {
+        "name": "delete.this.e582ac94",
+        "id": 81502
+      },
+      {
+        "name": "e2ecampaigntemp1.ec82b299",
+        "id": 143550
+      },
+      {
+        "name": "vertel.het.me.90387cf5",
+        "id": 35450
+      },
+      {
+        "name": "martin_1031.a8046335",
+        "id": 156500
+      },
+      {
+        "name": "test.20180227.c26ed0bb",
+        "id": 64450
+      },
+      {
+        "name": "hoicampianerso.4121082c",
+        "id": 33200
+      },
+      {
+        "name": "icreatecampaignfor.2b897307",
+        "id": 44451
+      },
+      {
+        "name": "e2ecampaigntemp.21081acc",
+        "id": 142550
+      },
+      {
+        "name": "e2ecampaigntemp.bd157b1d",
+        "id": 134502
+      },
+      {
+        "name": "multiple.teams.1.1c894226",
+        "id": 70454
+      },
+      {
+        "name": "testcampaign.47dcd29d",
+        "id": 26105
+      },
+      {
+        "name": "graphtest.234849fe",
+        "id": 39509
+      },
+      {
+        "name": "test1workflow5.c2fc845c",
+        "id": 141552
+      },
+      {
+        "name": "test1702.327928e8",
+        "id": 276510
+      },
+      {
+        "name": "delete.this.2.4ea5c978",
+        "id": 80550
+      },
+      {
+        "name": "nieuwecampaignja.30357d78",
+        "id": 37500
+      },
+      {
+        "name": "sdfasfsdfsdf.449bce73",
+        "id": 39455
+      },
+      {
+        "name": "delete.this.50351519",
+        "id": 80450
+      },
+      {
+        "name": "tomiseengenie.6f9c11f3",
+        "id": 30200
+      },
+      {
+        "name": "test1.07f1b684",
+        "id": 32201
+      },
+      {
+        "name": "icreatecampaignfor.ce540f5b",
+        "id": 44500
+      },
+      {
+        "name": "test.9edc2f67",
+        "id": 252500
+      },
+      {
+        "name": "wesley.20171115.1c70b460",
+        "id": 37600
+      },
+      {
+        "name": "jago.test.b182837d",
+        "id": 115450
+      },
+      {
+        "name": "test.delete.taskqu.0de09e9b",
+        "id": 56456
+      },
+      {
+        "name": "yellowcampaign",
+        "id": 21112
+      },
+      {
+        "name": "wesley20171006.97cac473",
+        "id": 32300
+      },
+      {
+        "name": "cr_test.9db52780",
+        "id": 42450
+      },
+      {
+        "name": "e2ecampaigntemp.220da43c",
+        "id": 134553
+      },
+      {
+        "name": "test.jago.feb.79623c28",
+        "id": 56452
+      },
+      {
+        "name": "martintest.c3716e63",
+        "id": 152502
+      },
+      {
+        "name": "test2403.b7c4f2c7",
+        "id": 291500
+      },
+      {
+        "name": "beendigen.bd8d3b56",
+        "id": 175501
+      },
+      {
+        "name": "test04122.8146c7d3",
+        "id": 266514
+      },
+      {
+        "name": "rm_tq11.cda494d1",
+        "id": 129524
+      },
+      {
+        "name": "e2ecampaigntemp.8d2b642d",
+        "id": 138554
+      },
+      {
+        "name": "jago5.544bcc6b",
+        "id": 44458
+      },
+      {
+        "name": "jago3.b1dddcb1",
+        "id": 44505
+      },
+      {
+        "name": "sanderdrtest.01a73fa4",
+        "id": 297500
+      },
+      {
+        "name": "deleteme6.7c33537b",
+        "id": 130510
+      },
+      {
+        "name": "timing02.d87d0f38",
+        "id": 49452
+      },
+      {
+        "name": "sprint.demo.2018.0.d0980015",
+        "id": 58450
+      },
+      {
+        "name": "taskqueuetest20180.fab99271",
+        "id": 115510
+      },
+      {
+        "name": "e2ecampaigntemp.01ab6e29",
+        "id": 134501
+      },
+      {
+        "name": "campaigns1526",
+        "id": 21120
+      },
+      {
+        "name": "wesley20190215.9752b190",
+        "id": 180535
+      },
+      {
+        "name": "e2ecampaigntemp.e33dd7cd",
+        "id": 83454
+      },
+      {
+        "name": "aagewoonnogeentest.0c666200",
+        "id": 142501
+      },
+      {
+        "name": "e2ecampaigntemp.26b49e3c",
+        "id": 143500
+      },
+      {
+        "name": "zul.campaign.2dd57b26",
+        "id": 220504
+      },
+      {
+        "name": "aaaa16",
+        "id": 16
+      },
+      {
+        "name": "TestjeCampaign2",
+        "id": 22051
+      },
+      {
+        "name": "futianming.5dc3666b",
+        "id": 173500
+      },
+      {
+        "name": "testvoordavid.2018.6c1485c9",
+        "id": 61450
+      },
+      {
+        "name": "test1.88595fe6",
+        "id": 39458
+      },
+      {
+        "name": "tim.59bb2c77",
+        "id": 98500
+      },
+      {
+        "name": "tttttttttt.2a772a77",
+        "id": 169500
+      },
+      {
+        "name": "test0512.4c0355b6",
+        "id": 267500
+      },
+      {
+        "name": "wesley.test.pacing.2680c3e5",
+        "id": 62450
+      },
+      {
+        "name": "test2503.41ead92e",
+        "id": 291844
+      },
+      {
+        "name": "e2ecampaigntemp.1c5f1fd9",
+        "id": 135504
+      },
+      {
+        "name": "deleteme1.759cabc3",
+        "id": 129530
+      },
+      {
+        "name": "sprint.demo.201712.5450d73a",
+        "id": 41504
+      },
+      {
+        "name": "test1workflow3.46c8f509",
+        "id": 142502
+      },
+      {
+        "name": "Hendrik",
+        "id": 23107
+      },
+      {
+        "name": "Gerrit",
+        "id": 23108
+      },
+      {
+        "name": "wesley20171016.9b3bb27f",
+        "id": 34450
+      },
+      {
+        "name": "campagne.sdkj.873bb630",
+        "id": 24100
+      },
+      {
+        "name": "riaftest.b059bdd1",
+        "id": 121501
+      },
+      {
+        "name": "campaign5ss",
+        "id": 21113
+      },
+      {
+        "name": "jago.3.a06f0de6",
+        "id": 56453
+      },
+      {
+        "name": "e2ecampaigntemp.61b4e827",
+        "id": 135501
+      },
+      {
+        "name": "toms.campaign.uno.6bb15f05",
+        "id": 37550
+      },
+      {
+        "name": "ashashashash",
+        "id": 23154
+      },
+      {
+        "name": "testw1020190211.b21210c7",
+        "id": 179500
+      },
+      {
+        "name": "e2ecampaigntemp.2f172360",
+        "id": 137550
+      },
+      {
+        "name": "asdfsaasdfsda",
+        "id": 23105
+      },
+      {
+        "name": "testeronicampaigni.cebabc2d",
+        "id": 26102
+      },
+      {
+        "name": "stability2.ec28b74e",
+        "id": 70453
+      },
+      {
+        "name": "jago4.bad18ee4",
+        "id": 44506
+      },
+      {
+        "name": "aa2tomcampanjo.5edf9e4b",
+        "id": 142603
+      },
+      {
+        "name": "e2ecampaigntemp.f6ed97ea",
+        "id": 138552
+      },
+      {
+        "name": "e2ecampaigntemp.ea48dafb",
+        "id": 134500
+      },
+      {
+        "name": "welcomemessage.tes.0b521467",
+        "id": 63450
+      },
+      {
+        "name": "copy2.of.frontend..b40f0e64",
+        "id": 45553
+      },
+      {
+        "name": "Jordy",
+        "id": 23100
+      },
+      {
+        "name": "qwer1.566be5cc",
+        "id": 39463
+      },
+      {
+        "name": "e2ecampaign.457ac37c",
+        "id": 52450
+      },
+      {
+        "name": "copy.of.jago.3.183f05e1",
+        "id": 57451
+      },
+      {
+        "name": "jago.1556cb73",
+        "id": 74451
+      },
+      {
+        "name": "test24_12.28b49b57",
+        "id": 168615
+      },
+      {
+        "name": "testphonenumber.394a6d68",
+        "id": 102450
+      },
+      {
+        "name": "campagne.ahahah.79842aef",
+        "id": 24050
+      },
+      {
+        "name": "rm_tq8.e8ba0cb2",
+        "id": 130501
+      },
+      {
+        "name": "dzsfjsadjhgrkgfhga.322be024",
+        "id": 38450
+      },
+      {
+        "name": "e2ecampaigntemp.52349705",
+        "id": 135502
+      },
+      {
+        "name": "deleteme5.77b9ba63",
+        "id": 130508
+      },
+      {
+        "name": "improvements.test.3a6c4124",
+        "id": 57450
+      },
+      {
+        "name": "e2ecampaign.0394f0c8",
+        "id": 48500
+      },
+      {
+        "name": "test201804133.4285ddeb",
+        "id": 83457
+      },
+      {
+        "name": "wesley.pacing.2017.fbc0c8a9",
+        "id": 39511
+      },
+      {
+        "name": "dailerstory.campai.209a4558",
+        "id": 67450
+      },
+      {
+        "name": "e2ecampaigntemp.bf0c31c8",
+        "id": 138504
+      },
+      {
+        "name": "tella.2b204140",
+        "id": 48501
+      },
+      {
+        "name": "testtimespentcampa.1b61d529",
+        "id": 41503
+      },
+      {
+        "name": "rosetta_avi.9b001c42",
+        "id": 280502
+      },
+      {
+        "name": "acw.bugfix.d8a7aa1c",
+        "id": 87450
+      },
+      {
+        "name": "newwftq.ec320f7f",
+        "id": 31250
+      },
+      {
+        "name": "campagne.wesley1.31277143",
+        "id": 24150
+      },
+      {
+        "name": "sandercampaign.0bee1cf4",
+        "id": 286550
+      },
+      {
+        "name": "abc.46ba865b",
+        "id": 45551
+      },
+      {
+        "name": "deleteme.c2fce947",
+        "id": 56454
+      },
+      {
+        "name": "e2ecampaigntemp.757cf826",
+        "id": 86500
+      },
+      {
+        "name": "e2ecampaigntemp.a96c64b1",
+        "id": 83456
+      },
+      {
+        "name": "demovoornettie.fffd5cc1",
+        "id": 304502
+      },
+      {
+        "name": "e2ecampaigntemp.d7ea93fc",
+        "id": 138511
+      },
+      {
+        "name": "sdfffff.ddfaa97e",
+        "id": 38451
+      },
+      {
+        "name": "e2ecampaign2.c80be8f3",
+        "id": 211504
+      },
+      {
+        "name": "NewCampaignos2",
+        "id": 23200
+      },
+      {
+        "name": "test.jago.2.2b97c9a5",
+        "id": 56501
+      },
+      {
+        "name": "test3010.83057109",
+        "id": 255500
+      },
+      {
+        "name": "multiple.teams.ros.15e26d71",
+        "id": 70455
+      },
+      {
+        "name": "tim.5c2b185f",
+        "id": 64451
+      },
+      {
+        "name": "newcampaign.191f6414",
+        "id": 50450
+      },
+      {
+        "name": "martin_test.91c37a03",
+        "id": 172503
+      },
+      {
+        "name": "asd.db4bc0c6",
+        "id": 32204
+      },
+      {
+        "name": "rm_tq9.7ce0a315",
+        "id": 130502
+      },
+      {
+        "name": "number1.aca06daf",
+        "id": 139500
+      },
+      {
+        "name": "test.teamfilter.20.6862c62b",
+        "id": 45500
+      },
+      {
+        "name": "test201804132.2bc6a79f",
+        "id": 84451
+      },
+      {
+        "name": "e2ecampaign.a2cbcf2a",
+        "id": 49454
+      },
+      {
+        "name": "rm_tq13.e016bf38",
+        "id": 130505
+      },
+      {
+        "name": "wesley.20171117.e3e64151",
+        "id": 38500
+      },
+      {
+        "name": "tom2.007dd723",
+        "id": 66450
+      },
+      {
+        "name": "rm_tq4.18b4111e",
+        "id": 128505
+      },
+      {
+        "name": "testnewtoolbar.e7e805a8",
+        "id": 132500
+      },
+      {
+        "name": "oepsie.f65fda3c",
+        "id": 176502
+      },
+      {
+        "name": "ctcampaign_manager.9a6e5b1c",
+        "id": 41501
+      },
+      {
+        "name": "Frederik",
+        "id": 23058
+      },
+      {
+        "name": "yell4o_campaign",
+        "id": 21114
+      },
+      {
+        "name": "brandnewcampaign.1cf8a2d6",
+        "id": 39462
+      },
+      {
+        "name": "e2ecampaigntemp.2ea26e79",
+        "id": 138502
+      },
+      {
+        "name": "wesleytestangular2.6f388394",
+        "id": 260501
+      },
+      {
+        "name": "wesley20171010.8b360335",
+        "id": 33350
+      },
+      {
+        "name": "timing01.555ee6a0",
+        "id": 49451
+      },
+      {
+        "name": "e2ecampaigntemp.52ae707d",
+        "id": 138507
+      },
+      {
+        "name": "NieuweCampaignos3",
+        "id": 23152
+      },
+      {
+        "name": "jago.test.b10d9ec4",
+        "id": 128550
+      },
+      {
+        "name": "delete.this.b2292a5d",
+        "id": 89452
+      },
+      {
+        "name": "confidencecheck201.9d5d5fe2",
+        "id": 88452
+      },
+      {
+        "name": "test.teamfilter.20.e9562c74",
+        "id": 45450
+      },
+      {
+        "name": "tomtest1.d5d08335",
+        "id": 39452
+      },
+      {
+        "name": "patrick1.d6fb3618",
+        "id": 28101
+      },
+      {
+        "name": "xyz12345.20600453",
+        "id": 135505
+      },
+      {
+        "name": "e2ecampaigntemp.77ce2084",
+        "id": 86505
+      },
+      {
+        "name": "sdfsdf.ea65da20",
+        "id": 39505
+      },
+      {
+        "name": "drop.test.cc6d385a",
+        "id": 55450
+      },
+      {
+        "name": "tallyman.integrati.ccfd31b8",
+        "id": 44452
+      },
+      {
+        "name": "mynewcampaigntestc.09e4c53b",
+        "id": 41500
+      },
+      {
+        "name": "campaign.manager.2.1a5d3b2c",
+        "id": 41505
+      },
+      {
+        "name": "delete.c63dde65",
+        "id": 166501
+      },
+      {
+        "name": "aa1tomcampanjo.dfb6b68e",
+        "id": 141500
+      },
+      {
+        "name": "testcampaignattrib.4cdd9231",
+        "id": 150502
+      },
+      {
+        "name": "repeat.cr_test6.5a9ff2d1",
+        "id": 47452
+      },
+      {
+        "name": "campagne.mycampainame.14521521",
+        "id": 24052
+      },
+      {
+        "name": "mynewcampianos.75f4e2b6",
+        "id": 30250
+      },
+      {
+        "name": "test2.20171215.efa70c5b",
+        "id": 44501
+      },
+      {
+        "name": "avi_paced.5d9fc802",
+        "id": 281550
+      },
+      {
+        "name": "callflowoverdracht.8d0d8760",
+        "id": 122500
+      },
+      {
+        "name": "regtest20180711.519bf6fb",
+        "id": 112450
+      },
+      {
+        "name": "testtaskqueue.be020b56",
+        "id": 103450
+      },
+      {
+        "name": "tom3.ec38056d",
+        "id": 113455
+      }
+    ]
+  },
+  {
+    "name": "Request_Assistance",
+    "id": 20050,
+    "values": []
+  },
+  {
+    "name": "bridgesync",
+    "id": 9051,
+    "values": [
+      {
+        "name": "yes",
+        "id": 60450
+      },
+      {
+        "name": "ada",
+        "id": 159500
+      }
+    ]
+  },
+  {
+    "name": "test11",
+    "id": 26050,
+    "values": [
+      {
+        "name": "234",
+        "id": 256500
+      }
+    ]
+  },
+  {
+    "name": "branches",
+    "id": 39050,
+    "values": [
+      {
+        "name": "310000",
+        "id": 248500
+      }
+    ]
+  },
+  {
+    "name": "branch_regions",
+    "id": 39051,
+    "values": [
+      {
+        "name": "999",
+        "id": 248501
+      }
+    ]
+  },
+  {
+    "name": "branch_groups",
+    "id": 39052,
+    "values": [
+      {
+        "name": "999999999",
+        "id": 248502
+      }
+    ]
+  },
+  {
+    "name": "products",
+    "id": 42050,
+    "values": []
+  },
+  {
+    "name": "TestBeau",
+    "id": 45050,
+    "values": []
+  },
+  {
+    "name": "phoneNumber",
+    "id": 44050,
+    "values": [
+      {
+        "name": "31642504836",
+        "id": 288503
+      },
+      {
+        "name": "31622843368",
+        "id": 291551
+      },
+      {
+        "name": "31614429585",
+        "id": 289500
+      },
+      {
+        "name": "31681694806",
+        "id": 288502
+      },
+      {
+        "name": "31644746001",
+        "id": 291894
+      }
+    ]
+  }
+]

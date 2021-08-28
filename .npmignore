@@ -1,0 +1,9 @@
+src
+webpack.*.js
+tsconfig.json
+karma.conf.js
+code-coverage
+test-helper
+demo
+.idea
+dist/@typings/**/*.test.d.ts

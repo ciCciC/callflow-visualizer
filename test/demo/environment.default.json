@@ -1,0 +1,65 @@
+{
+  "comment": "DO NOT EDIT THIS. COPY PASTE AND EDIT NEW ONE",
+  "proxies": [
+    {
+      "name": "contactingAPI",
+      "path": "/api/contacting",
+      "target": "http://lrv153xm.europe.intranet",
+      "headers": {
+        "VND.ING.EXT.COUNTRY": "NL",
+        "VND.ING.EXT.SESSION_ID": "sessionId",
+        "VND.ING.EXT.EMPLOYEE_ID": "LE26RC"
+      },
+      "rewrite": {
+        "comment": "THIS BLOCK IS OPTIONAL",
+        "pattern": "/api/contacting",
+        "with": "/api/contacting-proxy"
+      }
+    },
+    {
+      "name": "contactingCallFlowAPI",
+      "path": "/api/contacting-callflows",
+      "target": "http://lrv153xm.europe.intranet:9082",
+      "headers": {
+        "VND.ING.EXT.COUNTRY": "NL",
+        "VND.ING.EXT.SESSION_ID": "sessionId",
+        "VND.ING.EXT.EMPLOYEE_ID": "LE26RC"
+      },
+      "rewrite": {
+        "comment": "THIS BLOCK IS OPTIONAL",
+        "pattern": "/api/contacting-callflows",
+        "with": "/api/contacting-proxy/callflows"
+      }
+    },
+    {
+      "name": "contactingTeleOptiAPI",
+      "path": "/api/contacting-teleopti",
+      "target": "http://lrv153xm.europe.intranet",
+      "headers": {
+        "VND.ING.EXT.COUNTRY": "NL",
+        "VND.ING.EXT.SESSION_ID": "sessionId",
+        "VND.ING.EXT.EMPLOYEE_ID": "LE26RC"
+      },
+      "rewrite": {
+        "comment": "THIS BLOCK IS OPTIONAL",
+        "pattern": "/api/contacting-teleopti",
+        "with": "/api/contacting-proxy/teleopti"
+      }
+    },
+    {
+      "name": "contactingTelephonyAPI",
+      "path": "/api/contacting-telephony",
+      "target": "http://lrv153xm.europe.intranet:8085",
+      "headers": {
+        "VND.ING.EXT.COUNTRY": "NL",
+        "VND.ING.EXT.SESSION_ID": "sessionId",
+        "VND.ING.EXT.EMPLOYEE_ID": "corpKey"
+      },
+      "rewrite": {
+        "comment": "THIS BLOCK IS OPTIONAL",
+        "pattern": "/api/contacting-telephony",
+        "with": "/api/contacting-telephony-proxy"
+      }
+    }
+  ]
+}

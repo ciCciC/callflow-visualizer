@@ -1,0 +1,205 @@
+{
+  "organisation":{
+    "cltId":32052,
+    "cltName":"CS Twilion",
+    "circleId":32051,
+    "circleName":"Circle",
+    "superCircleId":32050,
+    "superCircleName":"CS-DBN_Twilion"
+  },
+  "organisationalRestrictions":[
+    {
+      "cltId":55,
+      "cltName":"CLT 1",
+      "circleId":54,
+      "circleName":"Circle 1",
+      "superCircleId":53,
+      "superCircleName":"Supercircle 1"
+    },
+    {
+      "cltId":32052,
+      "cltName":"CS Twix",
+      "circleId":32051,
+      "circleName":"Statistics",
+      "superCircleId":32050,
+      "superCircleName":"CS-DBN_Twix"
+    }
+  ],
+  "businessFunctions":[
+    {
+      "businessFunction":"user adherence viewing",
+      "role":"AGENT",
+      "accessRestriction":1
+    },
+    {
+      "businessFunction":"recording playback technical",
+      "role":"CJE",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"campaign management",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"forecast upload",
+      "role":"ADMIN",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"recording playback compliance",
+      "role":"COMPLIANCE_OFFICER",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"callflow management",
+      "role":"CJE",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"recording playback video technical",
+      "role":"CJE",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"WFM scheduling",
+      "role":"ADMIN",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"user adherence overriding",
+      "role":"STAFF_MANAGER",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"permissions administration",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"recording playback video selective",
+      "role":"COACH",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"recording playback selective",
+      "role":"COACH",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"opening hours management",
+      "role":"CJE",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"announcement management",
+      "role":"ANNOUNCEMENT_MANAGER",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"system tooling",
+      "role":"OPS_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"agent statistics download",
+      "role":"AGENT",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"task routing management",
+      "role":"CJE",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"callflow audio management",
+      "role":"CJE",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"organization administration",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"user administration",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"messaging conversation handling",
+      "role":"AGENT",
+      "accessRestriction":2
+    },
+    {
+      "businessFunction":"recording search & playback",
+      "role":"COMPLIANCE_OFFICER",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"recording playback video compliance",
+      "role":"COMPLIANCE_OFFICER",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"survey management",
+      "role":"ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"template management",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"selective recording management",
+      "role":"COACH",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"real time dashboard",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"contact me management",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"account recording management",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"recording download",
+      "role":"COMPLIANCE_OFFICER",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"video appointment management",
+      "role":"ADMIN",
+      "accessRestriction":4
+    },
+    {
+      "businessFunction":"login",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":2
+    },
+    {
+      "businessFunction":"contact handling",
+      "role":"AGENT",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"attribute management",
+      "role":"CJE",
+      "accessRestriction":5
+    },
+    {
+      "businessFunction":"blacklist management",
+      "role":"ACCOUNT_ADMIN",
+      "accessRestriction":5
+    }
+  ]
+}

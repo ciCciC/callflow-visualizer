@@ -1,0 +1,100 @@
+{
+  "destinations": [
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    },
+    {
+      "aliases": [
+        "Block bank card"
+      ],
+      "destination": "+31200000000",
+      "name": "Alarmlijn",
+      "restrictedTo": [
+        "Omnichannel",
+        "Supercicle 1"
+      ],
+      "type": "product"
+    }
+  ]
+}

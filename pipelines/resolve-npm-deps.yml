@@ -1,0 +1,66 @@
+parameters:
+  - name: npmrc_custom
+    displayName: 'npmrc_custom'
+    default: ' '
+    type: string
+
+  - name: purposeId
+    type: string
+    default: P09389
+
+stages:
+  - stage: ResolveDependenciesNPM
+    variables:
+      - group: 'azure-keyvault-INGOne${{parameters.purposeId}}KvB'
+    pool:
+      name: 'CDaaSLinux'
+    jobs:
+      - job: ResolveDependenciesNPM
+        steps:
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                jq ".devDependencies,.dependencies" <<< cat package.json > ./cacheKey
+                cat ./cacheKey
+            displayName: Generate cache key
+
+          - task: Cache@2
+            inputs:
+              key: './cacheKey'
+              path: '$(build.sourcesdirectory)/node_modules'
+              cacheHitVar: 'node_modules_cached'
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                echo '
+                _auth=$(NPM-AUTH)
+                always-auth=true
+                ignore-scripts=true
+                strict-ssl=false
+                registry=https://artifactory.ing.net/artifactory/api/npm/releases_npm_all/
+                ${{ parameters.npmrc_custom }}' > $(System.DefaultWorkingDirectory)/.npmrc
+
+          - task: Npm@1
+            inputs:
+              command: 'custom'
+              customCommand: 'install'
+            condition: eq(variables['node_modules_cached'], false)
+
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: '$(build.sourcesdirectory)/node_modules'
+              includeRootFolder: false
+              archiveType: 'tar'
+              archiveFile: '$(build.sourcesdirectory)/node_modules.tar.gz'
+              tarCompression: 'gz' # Optional. Options: gz, bz2, xz, none
+              replaceExistingArchive: true
+
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: '$(build.sourcesdirectory)/node_modules.tar.gz'
+              ArtifactName: 'drop'
+              publishLocation: 'Container'

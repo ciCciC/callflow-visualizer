@@ -1,0 +1,11 @@
+export { default as rootIcon } from '../icon/root-node.svg';
+export { default as messageNodeIcon } from '../icon/message-node.svg';
+export { default as menuNodeIcon } from '../icon/menu-node.svg';
+export { default as dataNodeIcon } from '../icon/data-node.svg';
+export { default as announcementIcon } from '../icon/announcement-node.svg';
+export { default as apiIcon } from '../icon/api-node.svg';
+export { default as hangupIcon } from '../icon/hangup-node.svg';
+export { default as createTaskIcon } from '../icon/create-task-node.svg';
+export { default as gatherSpeechIcon } from '../icon/gather-speech-node.svg';
+export { default as redirectIcon } from '../icon/redirect-node.svg';
+export { default as unknownNodeIcon } from '../icon/unknown-node.svg';

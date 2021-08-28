@@ -1,0 +1,189 @@
+name: $(Version.Major).$(Version.Minor).$(Version.Semantic)
+
+variables:
+  Version.Major: 0
+  Version.Minor: 3
+  # semanticVersion counter is automatically incremented by one in each execution of pipeline
+  # second parameter is seed value to reset to every time the referenced majorMinorVersion is changed
+  Version.Semantic: $[counter(variables['Version.Major'].variables['Version.Minor'], 0)]
+
+trigger:
+  - master
+  - feature/*
+  - fix/*
+
+stages:
+  - template: 'resolve-npm-deps.yml'
+    parameters:
+      npmrc_custom: ${{ parameters.npmrc_custom }}
+      purposeId: ${{ parameters.purposeId }}
+
+  # Run build stage on Azure Agent
+  - stage: TestAndBuild
+    dependsOn:
+      - ResolveDependenciesNPM
+    pool:
+      image: 'ubuntu-18.04'
+    jobs:
+      - job: TestAndBuild
+        steps:
+          - task: Bash@3
+            displayName: Set package version to build number
+            inputs:
+              targetType: 'inline'
+              script: |
+                npm --no-git-tag-version version $(Build.BuildNumber)
+
+          # Download NPM dependencies from build artifact
+          - template: web/install-dependencies-npm/steps/default.yml@global-templates-fl
+
+          # Run RetireJS
+          - task: TouchpointRetirejs@1
+            inputs:
+              TouchpointRetirejsServiceConnection: 'P09389 - TouchpointRetirejs'
+              severity: none
+            condition: eq('${{ parameters.runRetireJS }}', true)
+
+          # Run Providence Analysis
+          - task: TouchpointProvidence@1
+            inputs:
+              TouchpointProvidenceServiceConnection: 'P09389 - TouchpointProvidence'
+            condition: eq('${{ parameters.runProvidence }}', true)
+
+          - task: CmdLine@2
+            displayName: Verify - Test
+            inputs:
+              script: 'npm run test'
+            condition: eq('${{ parameters.runTests }}', true)
+
+          - task: CmdLine@2
+            displayName: Verify - Lint
+            inputs:
+              script: 'npm run lint'
+            continueOnError: true
+
+          - task: CmdLine@2
+            displayName: Build
+            inputs:
+              script: 'npm run build'
+
+#          - task: CopyFiles@2
+#            displayName: Copy build output to folder
+#            inputs:
+#              contents: |
+#                dist/**
+#                package.json
+#              targetFolder: packaged
+#            condition: contains('${{join(' ',parameters.branchesForRelease)}}', variables['Build.SourceBranch'])
+#
+#          - task: git-tag-on-release-task@9
+#            displayName: Create tag
+#            condition: contains('${{join(' ',parameters.branchesForRelease)}}', variables['Build.SourceBranch'])
+#
+#          - task: CmdLine@2
+#            displayName: Create storybook
+#            inputs:
+#              script: 'npm run build-storybook'
+#            condition: eq('${{ parameters.publishDemo }}', true)
+#
+#          - task: Bash@3
+#            inputs:
+#              targetType: 'inline'
+#              script: |
+#                PACKAGE_NAME=$(cut -d "=" -f 2 <<< $(npm run env | grep "npm_package_name"))
+#                echo "##vso[task.setvariable variable=packageName]$PACKAGE_NAME"
+#            displayName: Get package name
+#            condition: eq('${{ parameters.publishCypress }}', true)
+#
+#          - task: UniversalPackages@0
+#            inputs:
+#              command: 'publish'
+#              publishDirectory: '$(build.sourcesdirectory)/cypress'
+#              feedsToUsePublish: 'internal'
+#              vstsFeedPublish: '49255723-5232-4e9f-9501-068bf5e381a9/6c83be3a-7a22-4b69-9407-f23ffa226a58'
+#              vstsFeedPackagePublish: '$(packageName)'
+#              versionOption: 'custom'
+#              versionPublish: '$(Build.BuildNumber)-cypress'
+#            condition: eq('${{ parameters.publishCypress }}', true)
+#
+#          # Publish web-demo output as build artifact
+#          - task: PublishBuildArtifacts@1
+#            displayName: Publish storybook output
+#            inputs:
+#              PathtoPublish: '$(build.sourcesdirectory)/${{parameters.demoFolder}}'
+#              ArtifactName: '${{parameters.demoFolder}}'
+#              publishLocation: 'Container'
+#            condition: eq('${{ parameters.publishDemo }}', true)
+#
+#          # Publish fl_pipeline_artifacts as build artifact
+#          - task: PublishBuildArtifacts@1
+#            displayName: Publish build output
+#            inputs:
+#              PathtoPublish: packaged
+#              ArtifactName: 'fl_pipeline_artifacts'
+#              publishLocation: 'Container'
+#            condition: contains('${{join(' ',parameters.branchesForRelease)}}', variables['Build.SourceBranch'])
+
+  # Publish the webDemo
+#  - template: web/deploy-web-demo/stages/default.yml@global-templates-fl
+#    parameters:
+#      buildArtifact: ${{ parameters.demoFolder }}
+#      dependsOn: TestAndBuild
+#      condition: and(succeeded(), eq('${{ parameters.publishDemo }}', true))
+#
+#  - stage: PublishAzure
+#    condition: and(succeeded(), eq('${{ parameters.publishToAzure }}', true), contains('${{join(' ',parameters.branchesForRelease)}}', variables['Build.SourceBranch']))
+#    dependsOn:
+#      - TestAndBuild
+#    pool:
+#      image: 'ubuntu-18.04'
+#    jobs:
+#      - job:
+#        steps:
+#          - task: DownloadBuildArtifacts@0
+#            inputs:
+#              buildType: 'current'
+#              downloadType: 'single'
+#              artifactName: 'fl_pipeline_artifacts'
+#              downloadPath: '$(build.sourcesdirectory)'
+#          - task: Npm@1
+#            displayName: 'NPM Publish'
+#            inputs:
+#              command: 'publish'
+#              publishRegistry: 'useFeed'
+#              publishFeed: '$(System.TeamProject)/${{ parameters.azureFeed }}'
+#              workingDir: '$(build.sourcesdirectory)/fl_pipeline_artifacts'
+#              verbose: true
+#
+#  - stage: PublishArtifactory
+#    variables:
+#      - group: 'azure-keyvault-INGOne${{parameters.purposeId}}KvB'
+#    condition: and(succeeded(), eq('${{ parameters.publishToArtifactory }}', true), contains('${{join(' ',parameters.branchesForRelease)}}', variables['Build.SourceBranch']))
+#    dependsOn:
+#      - TestAndBuild
+#    pool:
+#      name: 'CDaaSLinux'
+#    jobs:
+#      - job:
+#        steps:
+#          - task: DownloadBuildArtifacts@0
+#            inputs:
+#              buildType: 'current'
+#              downloadType: 'single'
+#              artifactName: 'fl_pipeline_artifacts'
+#              downloadPath: '$(build.sourcesdirectory)'
+#          - task: Bash@3
+#            inputs:
+#              targetType: 'inline'
+#              script: |
+#                echo '
+#                _auth = $(NPM-AUTH)
+#                always-auth = true
+#                strict-ssl=false
+#                registry=https://artifactory.ing.net/artifactory/api/npm/${{ parameters.npmRepository }}/' > $(build.sourcesdirectory)/fl_pipeline_artifacts/.npmrc
+#
+#          - task: Npm@1
+#            inputs:
+#              command: 'custom'
+#              workingDir: '$(build.sourcesdirectory)/fl_pipeline_artifacts'
+#              customCommand: 'publish'

@@ -1,0 +1,10 @@
+{
+  "destination": "product:TFS.MiddleOffice.BE_nl",
+  "name": "TFS Middle Office - Dutch",
+  "type": "product",
+  "restrictedTo": "",
+  "aliases": "TFS",
+  "openingHours": "TFS_SC",
+  "taskAttributes[autoaccept]": "false",
+  "taskAttributes[product]": "TFS.MiddleOffice.BE_nl"
+}

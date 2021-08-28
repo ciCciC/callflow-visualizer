@@ -1,0 +1,53 @@
+{
+  "friendlyName": "NL-tst",
+  "settings": [
+    {
+      "key": "ACW",
+      "value": "OFF"
+    },
+    {
+      "key": "DEFAULT_OUTBOUND_NUMBER",
+      "value": "+31858885094"
+    },
+    {
+      "key": "MANUAL_USER_ROLES_ALLOWED",
+      "value": "TRUE"
+    },
+    {
+      "key": "TELEOPTI_BUSINESS_UNIT_NAME",
+      "value": "the Netherlands - Test"
+    },
+    {
+      "key": "custom3_association",
+      "value": "{\"exceptions\": [\"voice\", \"chat\"], \"autoSelectInternal\": \"voice\"}"
+    },
+    {
+      "key": "chat_association",
+      "value": "{\"exceptions\": [\"voice\"]}"
+    },
+    {
+      "key": "TWILIO_CALLBACK_BASE_URL",
+      "value": "https://test.mc.ing.nl"
+    },
+    {
+      "key": "TIMEZONE",
+      "value": "Europe/Amsterdam"
+    },
+    {
+      "key": "OUTBOUND_CALL_FROM_AVAILABLE",
+      "value": "WAe282db11dd3c384827d7df3189e491d6"
+    },
+    {
+      "key": "multiChannelEnabled",
+      "value": "FALSE"
+    },
+    {
+      "key": "pausingNonRealTimeTasksAllowed",
+      "value": "FALSE"
+    },
+    {
+      "key": "leased_line_maintenance",
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+[
+  {
+    "id": 1,
+    "anonymousDialing": true,
+    "receiveCallsOnPhone": true,
+    "friendlyName": "Aad",
+    "displayName": "Aad",
+    "phoneNumberFrom": "+31612225678",
+    "sid": "1",
+    "status": "Initial",
+    "employeeId": "654321",
+    "roles": "AGENT",
+
+    "organisationalRestrictions": [
+      {
+        "id": 6,
+        "name": "CLT 1",
+        "level": 0,
+        "parent": {
+          "id": 5,
+          "name": "Circle Beleggen",
+          "level": 1,
+          "parent": {
+            "id": 4,
+            "name": "Supercircle Beleggen",
+            "level": 2,
+            "parent": null,
+            "children": []
+          },
+          "children": []
+        },
+        "children": []
+      }
+    ],
+
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    },
+    "maxChats": 2,
+    "fullName": "Aad",
+    "source" : "MANUAL"
+  },
+  {
+    "id": 2,
+    "anonymousDialing": false,
+    "friendlyName": "Anton",
+    "displayName": "Anton",
+    "phoneNumberFrom": "+31612345699",
+    "sid": "2",
+    "status": "Created",
+    "employeeId": "DC12BA",
+    "roles": "ADMIN",
+
+    "organisationalRestrictions": [
+      {
+        "id": 6,
+        "name": "CLT 1",
+        "level": 0,
+        "parent": {
+          "id": 5,
+          "name": "Circle Beleggen",
+          "level": 1,
+          "parent": {
+            "id": 4,
+            "name": "Supercircle Beleggen",
+            "level": 2,
+            "parent": null,
+            "children": []
+          },
+          "children": []
+        },
+        "children": []
+      },
+      {
+        "id": 7,
+        "name": "CLT 2",
+        "level": 0,
+        "parent": {
+          "id": 5,
+          "name": "Circle Beleggen",
+          "level": 1,
+          "parent": {
+            "id": 4,
+            "name": "Supercircle Beleggen",
+            "level": 2,
+            "parent": null,
+            "children": []
+          },
+          "children": []
+        },
+        "children": []
+      }
+    ],
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    },
+    "maxChats": 2,
+    "fullName": "Anton",
+    "source" : "SYNCED"
+  },
+  {
+    "id": 3,
+    "friendlyName": "Albert",
+    "displayName": "Albert",
+    "phoneNumberFrom": "+31612345678",
+    "sid": "3",
+    "status": "Deleted",
+    "employeeId": "AA00AA",
+    "roles": "SUPERVISOR",
+
+
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    },
+    "maxChats": 2,
+    "fullName": "Albert",
+    "source" : "MANUAL"
+  },
+  {
+    "id": 4,
+    "fullName": "Mock user 1",
+    "sid": "4",
+    "status": "Initial",
+    "employeeId": "AA00AA"
+  },
+  {
+    "id": 5,
+    "anonymousDialing": true,
+    "fullName": "Mock user 2",
+    "sid": "5",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    },
+    "source" : "MANUAL"
+  },
+  {
+    "id": 6,
+    "fullName": "Mock user 3",
+    "anonymousDialing": false,
+    "sid": "6",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 7,
+    "fullName": "Mock user 4",
+    "sid": "7",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "roles": "AGENT,SUPERVISOR,ADMIN",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 8,
+    "fullName": "Mock user 5",
+    "phoneNumberFrom": "+31612345678",
+    "sid": "8",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 9,
+    "fullName": "Mock user 6",
+    "sid": "9",
+    "status": "Initial",
+    "employeeId": "Ab01Ab",
+    "roles": "AGENT,ADMIN,SUPERVISOR,MONITORING",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 10,
+    "fullName": "Mock user 7",
+    "sid": "10",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 11,
+    "fullName": "Mock user 8",
+    "sid": "11",
+    "status": "Initial",
+    "employeeId": "AA00AA"
+  },
+  {
+    "id": 12,
+    "fullName": "Mock user 9",
+    "sid": "12",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 13,
+    "fullName": "Mock user 10",
+    "sid": "13",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 14,
+    "fullName": "Mock user 11",
+    "sid": "14",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 15,
+    "fullName": "Mock user 12",
+    "sid": "15",
+    "status": "Initial",
+    "employeeId": "AA00AB",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 16,
+    "fullName": "Mock user 13",
+    "sid": "16",
+    "status": "Initial",
+    "employeeId": "AA00AA",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 17,
+    "fullName": "Mock user 14",
+    "sid": "17",
+    "status": "Initial",
+    "employeeId": "122345",
+    "roles": "SUPERVISOR",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  },
+  {
+    "id": 18,
+    "fullName": "Mock user 15",
+    "sid": "18",
+    "status": "Initial",
+    "employeeId": "AB01CD",
+    "team": {
+      "id": 6,
+      "name": "CLT 1",
+      "level": 0,
+      "parent": {
+        "id": 5,
+        "name": "Circle Beleggen",
+        "level": 1,
+        "parent": {
+          "id": 4,
+          "name": "Supercircle Beleggen",
+          "level": 2,
+          "parent": null,
+          "children": []
+        },
+        "children": []
+      },
+      "children": []
+    }
+  }
+]

@@ -1,0 +1,74 @@
+parameters:
+  - name: 'dependsOn'
+    displayName: 'The stage dependency'
+    type: object
+    default: ''
+
+  - name: 'condition'
+    displayName: 'The condition to execute this stage or not'
+    type: string
+    default: true
+
+  - name: vaultName
+    type: string
+    default: INGOneGP09389KvB
+
+  - name: azureSubscription
+    type: string
+    default: azure-keyvault-INGOneGP09389
+
+  - name: environment
+    type: string
+    default: Test
+
+stages:
+  - stage: SetActiveVersionTouchpoint${{ parameters.environment }}
+    condition: ${{ parameters.condition }}
+    ${{ if not(eq(parameters.dependsOn, '')) }}:
+      dependsOn: ${{ parameters.dependsOn }}
+    jobs:
+      - job: SetActiveVersionTouchpoint
+        variables:
+          - name: environment
+            ${{ if eq('master', variables['Build.SourceBranchName']) }}:
+              value: Acceptance
+            ${{ if eq('develop', variables['Build.SourceBranchName']) }}:
+              value: Test
+        pool:
+          name: 'CDaaSLinux'
+        steps:
+          - checkout: global-templates-twilion
+            path: global-templates-twilion
+
+          - checkout: self
+            target: host
+            path: 's/code'
+            condition: eq('develop', variables['Build.SourceBranchName'])
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                cd $(Build.SourcesDirectory)/code
+                PACKAGE_VERSION=$(Build.BuildNumber)-develop-$(git rev-parse --short=8 HEAD)
+                echo $PACKAGE_VERSION
+                echo "##vso[task.setvariable variable=packageVersion]$PACKAGE_VERSION"
+            displayName: Get package version for develop
+            condition: eq('develop', variables['Build.SourceBranchName'])
+
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: |
+                echo "##vso[task.setvariable variable=packageVersion]$(Build.BuildNumber)"
+            displayName: Get package version for master
+            condition: eq('master', variables['Build.SourceBranchName'])
+
+          - task: AzureKeyVault@1
+            inputs:
+              azureSubscription: ${{ parameters.azureSubscription }}
+              KeyVaultName: ${{ parameters.vaultName }}
+              SecretsFilter: '*'
+              RunAsPreJob: true
+
+          - bash: USERNAME=$(touchpoint-username) PASSWORD=$(touchpoint-password) ENV=$(environment) VERSION=$(packageVersion) node $(Pipeline.Workspace)/global-templates-twilion/web/scripts/dist/setActiveVersion.js

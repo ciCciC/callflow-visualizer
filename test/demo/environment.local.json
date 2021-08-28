@@ -1,0 +1,32 @@
+{
+  "comment": "DO NOT EDIT THIS. COPY PASTE AND EDIT NEW ONE",
+  "proxies": [
+    {
+      "name": "contactingAPI",
+      "path": "/api/contacting",
+      "target": "http://localhost:7961",
+      "headers": {
+        "local-login": "hessel"
+      },
+      "port": 7961
+    },
+    {
+      "name": "contactingCallFlowAPI",
+      "path": "/api/contacting-callflow",
+      "target": "http://localhost:7962",
+      "headers": {
+        "local-login": "hessel"
+      },
+      "port": 7962
+    },
+    {
+      "name": "contactingTelephonyAPI",
+      "path": "/api/contacting-telephony",
+      "target": "http://localhost:8085",
+      "headers": {
+        "local-login": "corpKey"
+      },
+      "port": 8085
+    }
+  ]
+}
