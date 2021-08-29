@@ -1,5 +1,4 @@
 {
-  "comment": "DO NOT EDIT THIS. COPY PASTE AND EDIT NEW ONE",
   "proxies": [
     {
       "name": "contactingAPI",
@@ -18,15 +17,6 @@
         "local-login": "hessel"
       },
       "port": 7962
-    },
-    {
-      "name": "contactingTelephonyAPI",
-      "path": "/api/contacting-telephony",
-      "target": "http://localhost:8085",
-      "headers": {
-        "local-login": "corpKey"
-      },
-      "port": 8085
     }
   ]
 }

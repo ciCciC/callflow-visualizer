@@ -9,9 +9,9 @@ if (debug) {
 }
 
 module.exports = function (config) {
-  const testFiles = 'test/unit/**/*.test.ts';
-  const testFixtures = 'test/unit/fixture/*.ts';
-  const testHelpers = 'test/test-helper/*.ts';
+  // const testFiles = 'test/unit/**/*.test.ts';
+  // const testFixtures = 'test/unit/fixture/*.ts';
+  // const testHelpers = 'test/test-helper/*.ts';
   const srcFiles = 'src/**/*.ts';
 
   config.set({
@@ -31,7 +31,6 @@ module.exports = function (config) {
     ],
 
     // frameworks to use
-    // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['jasmine', 'karma-typescript'],
 
     mime: {
@@ -41,9 +40,9 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      { pattern: testFiles },
-      { pattern: testFixtures },
-      { pattern: testHelpers },
+      // { pattern: testFiles },
+      // { pattern: testFixtures },
+      // { pattern: testHelpers },
       { pattern: srcFiles },
     ],
 

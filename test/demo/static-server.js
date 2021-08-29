@@ -4,33 +4,12 @@ const chokidar = require('chokidar');
 const fs = require('fs');
 const Router = require('koa-router');
 const cors = require('@koa/cors');
-// const { createConfig } = require('es-dev-server/dist/config');
-// const { createMiddlewares } = require('es-dev-server/dist/create-middlewares');
-
 const {OUTPUT_PATH} = require('./../paths');
 const serve = require('koa-static');
-
-// const config = createConfig({
-//   appIndex: 'index.html',
-//   rootDir: './dist',
-//   open: true,
-//   watch: true,
-//   nodeResolve: true,
-//   basePath: '/callflow-visualizer',
-// });
-
-// const fileWatcher = chokidar.watch([]);
-
 const router = new Router();
-
-// const middlewares = createMiddlewares(config, fileWatcher).middlewares;
 const app = new Koa();
-app.use(cors({ credentials: true }));
 
-// middlewares.forEach((middleware) => {
-//   app.use(middleware);
-// });
-// app.use(cors({ credentials: true }));
+app.use(cors({ credentials: true }));
 
 function getJson(url, referer) {
   // const params = url.split('?');
@@ -57,12 +36,6 @@ router.post('/api/*', (ctx) => {
   ctx.response.status = 204;
 
 });
-
-//For testing unhappy scenarios
-// router.post('/api/*', (ctx) => {
-//   ctx.response.status = 400;
-//   ctx.body = getJson(ctx.url+"/"+ctx.request.method+"?badRequest", ctx.request.header.referer);
-// });
 
 app.use(router.routes());
 

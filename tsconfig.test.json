@@ -60,7 +60,6 @@
       "@types/jasmine",
       "@types/karma",
       "@types/node",
-//      "@types/ing-web"
     ]
   }
 }
