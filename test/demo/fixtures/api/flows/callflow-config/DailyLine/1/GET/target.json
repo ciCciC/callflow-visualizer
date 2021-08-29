@@ -1,5 +1,5 @@
 {
-  "name": "DBPGeneral",
+  "name": "DailyLine",
   "max_retries": 2,
   "top_node_id": "328e221c-1794-4001-98af-68f1169b1df0",
   "fallback_node": "984bc6d1-8a2e-427b-877f-3b06a4492415",
@@ -6666,7 +6666,7 @@
       ]
     }
   ],
-  "version": "1.6.21",
+  "version": "1",
   "dsl_version": "7.0.34",
   "flow_type": "CALLFLOW"
 }

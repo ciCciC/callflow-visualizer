@@ -1,5 +1,5 @@
 {
-  "name": "AssistedChannelsHighSpeedLine",
+  "name": "AssistedLine",
   "max_retries": 2,
   "top_node_id": "4df2edcd-55e2-425b-97dd-7605a9f4ae2f",
   "fallback_node": "73eadb27-4cb7-40da-ae14-b603084ab604",
@@ -1292,7 +1292,7 @@
       ]
     }
   ],
-  "version": "1.0.7",
+  "version": "1",
   "dsl_version": "7.0.21",
   "flow_type": "CALLFLOW"
 }

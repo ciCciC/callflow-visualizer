@@ -29,14 +29,6 @@ export class ContactingCallFlowService {
   }
 
   static async getCallFlow(callFlowName: string, version: string): Promise<CallFlow> {
-    // test case: small callFlow
-    callFlowName = 'AssistedChannelsHighSpeedLine';
-    version = '1.0.7-Mahesh';
-
-    // test case: big callFlow
-    // callFlowName = 'DBPGeneral';
-    // version = '1.6.19-intents';
-
     const resourceUrl = `/api/contacting-callflows/callflow-config/${callFlowName}/${version}`;
     const result = await axios.get(resourceUrl, {transformResponse: [this.transformCallFlow]});
     return result.data;
@@ -54,7 +46,7 @@ export class ContactingCallFlowService {
       activeVersion: el.version,
       revisions: el.revisions.map((rev: any) => (<Revision>{
         version: rev.version,
-        revType: rev.rev_type
+        revType: rev.revType
       }))
     }
     )
