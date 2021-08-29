@@ -3,8 +3,8 @@
   "name": "callflow-visualizer",
   "description": "Flow visualizer of call structures",
   "author": "Koray Poyraz",
-  "email": "koraypoyraz1@gmail.com",
-  "homepage": "somehomepage",
+  "email": "",
+  "homepage": "https://github.com/ciCciC/callflow-visualizer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -112,9 +112,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "lolz@someurl"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ]
+    "url": "https://github.com/ciCciC/callflow-visualizer.git"
+  }
 }
