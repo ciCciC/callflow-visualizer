@@ -7,7 +7,7 @@ import {BaseRender} from "../../model/BaseRender";
 import {TaskAttrsStoreTask} from "../../model/TaskAttrsStoreTask";
 import {CreateTaskTask} from "../../model/CreateTaskTask";
 import {DefaultTask} from "../../model/DefaultTask";
-import {FONT_14, ORANGE, WHITE} from "../../presets/stylepresets";
+import {FONT_14, PURPLE, WHITE} from "../../presets/stylepresets";
 
 @customElement('node-info-view')
 export class NodeInfoView extends LitElement {
@@ -29,7 +29,7 @@ export class NodeInfoView extends LitElement {
     return css`
       .collapsible {
         background-color: ${WHITE};
-        color: ${ORANGE};
+        color: ${PURPLE};
         cursor: pointer;
         padding: 10px;
         width: 100%;
@@ -42,7 +42,7 @@ export class NodeInfoView extends LitElement {
       }
 
       .active, .collapsible:hover {
-        background-color: ${ORANGE};
+        background-color: ${PURPLE};
         color: ${WHITE};
       }
 
@@ -52,7 +52,7 @@ export class NodeInfoView extends LitElement {
 
       .collapsible:after {
         content: '\\002B';
-        color: ${ORANGE};
+        color: ${PURPLE};
         font-weight: bold;
         float: right;
         margin-left: 5px;

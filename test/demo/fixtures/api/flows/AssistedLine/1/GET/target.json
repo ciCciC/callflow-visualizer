@@ -32,8 +32,8 @@
       ]
     },
     {
-      "name" : "gatherspeech",
-      "node_type" : "NIELS_AWESOME",
+      "name" : "nameOfAunknownNode",
+      "node_type" : "UNKNOWN_NODE",
       "id" : "c4aa17d7-c3e7-4382-9812-0292735f45bc",
       "task" : {
         "input_params" : {
@@ -1293,6 +1293,5 @@
     }
   ],
   "version": "1",
-  "dsl_version": "7.0.21",
   "flow_type": "CALLFLOW"
 }

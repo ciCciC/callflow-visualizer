@@ -12,7 +12,6 @@ const app = new Koa();
 app.use(cors({ credentials: true }));
 
 function getJson(url, referer) {
-  // const params = url.split('?');
   console.log('Requested: ' + url)
   const fileRoot = `${__dirname}/fixtures${url}/`;
   let fileName = fileRoot + `target.json`;
@@ -38,7 +37,6 @@ router.post('/api/*', (ctx) => {
 });
 
 app.use(router.routes());
-
 app.listen(9912);
 
 console.log('\x1b[33m%s\x1b[0m', 'Server started on http://localhost:9912\n' +

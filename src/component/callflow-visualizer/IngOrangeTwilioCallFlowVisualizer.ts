@@ -4,7 +4,7 @@ import {LeftSideBar} from '../left-side-bar/LeftSideBar';
 import {TopBar} from '../top-bar/TopBar';
 import {SideBarService} from "../../service/SideBarService";
 import {NetworkGraph} from "../network-graph/NetworkGraph";
-import {ORANGE} from "../../presets/stylepresets";
+import {PURPLE} from "../../presets/stylepresets";
 import {LoadingService} from "../../service/LoadingService";
 
 type ScopedElements = Record<string, unknown>;
@@ -38,7 +38,7 @@ export class IngOrangeTwilioCallFlowVisualizer extends LitElement {
         left: 50%;
         border: 16px solid #f3f3f3;
         border-radius: 50%;
-        border-top: 16px solid ${ORANGE};
+        border-top: 16px solid ${PURPLE};
         width: 120px;
         height: 120px;
         -webkit-animation: spin 2s linear infinite; /* Safari */
