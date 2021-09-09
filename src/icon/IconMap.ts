@@ -19,25 +19,22 @@ export class IconMap {
   static getIcon(nodeType?: NodeEnum | string): any {
     switch (nodeType) {
       case NodeEnum.ROOT: return rootIcon;
-      case NodeEnum.TASK_ATTRS_STORE: return dataNodeIcon;
+      case NodeEnum.STORE: return dataNodeIcon;
       case NodeEnum.DATA: return dataNodeIcon;
-      case NodeEnum.MESSAGE: return messageNodeIcon;
+      case NodeEnum.MSG_PLAY: return messageNodeIcon;
       case NodeEnum.GATHER: return menuNodeIcon;
-      case NodeEnum.GATHER_SPEECH: return gatherSpeechIcon;
-      case NodeEnum.GATHER_ALL: return gatherSpeechIcon;
-      case NodeEnum.ANNOUNCEMENT: return announcementIcon;
-      case NodeEnum.API: return apiIcon;
-      case NodeEnum.CONTACTING_API: return apiIcon;
+      case NodeEnum.SPEECH_MODEL: return gatherSpeechIcon;
+      case NodeEnum.PROCLAMATION: return announcementIcon;
+      case NodeEnum.API_CALL: return apiIcon;
+      case NodeEnum.API_FLOW_CALL: return apiIcon;
       case NodeEnum.HANGUP: return hangupIcon;
-      case NodeEnum.CREATE_TASK: return createTaskIcon;
-      case NodeEnum.CREATE_CONTACTING_TASK: return createTaskIcon;
-      case NodeEnum.UPDATE_CONTACTING_TASK: return createTaskIcon;
-      case NodeEnum.FORWARD: return createTaskIcon;
-      case NodeEnum.OUTBOUND_CALL: return createTaskIcon;
-      case NodeEnum.REDIRECT: return redirectIcon;
-      case NodeEnum.WAIT_REDIRECT: return redirectIcon;
-      case NodeEnum.TATA_CTO: return dataNodeIcon;
-      case NodeEnum.TATA_RAT: return dataNodeIcon;
+      case NodeEnum.TASK: return createTaskIcon;
+      case NodeEnum.TASK_ADV: return createTaskIcon;
+      case NodeEnum.TASK_UPDATE: return createTaskIcon;
+      case NodeEnum.REDIRECT_CALL: return createTaskIcon;
+      case NodeEnum.REDIRECT_FLOW: return redirectIcon;
+      case NodeEnum.OTP: return dataNodeIcon;
+      case NodeEnum.ACCESS_T: return dataNodeIcon;
       default: return unknownNodeIcon;
     }
   }
@@ -46,25 +43,22 @@ export class IconMap {
   static getIconAsString(nodeType?: NodeEnum | string, fillColor: string): string {
     switch (nodeType) {
       case NodeEnum.ROOT: return this.root(fillColor);
-      case NodeEnum.TASK_ATTRS_STORE: return this.data(fillColor);
+      case NodeEnum.STORE: return this.data(fillColor);
       case NodeEnum.DATA: return this.data(fillColor);
-      case NodeEnum.MESSAGE: return this.message(fillColor);
+      case NodeEnum.MSG_PLAY: return this.message(fillColor);
       case NodeEnum.GATHER: return this.menu(fillColor);
-      case NodeEnum.GATHER_SPEECH: return this.gatherSpeech(fillColor);
-      case NodeEnum.GATHER_ALL: return this.gatherSpeech(fillColor);
-      case NodeEnum.ANNOUNCEMENT: return this.announcement(fillColor);
-      case NodeEnum.API: return this.api(fillColor);
-      case NodeEnum.CONTACTING_API: return this.api(fillColor);
+      case NodeEnum.SPEECH_MODEL: return this.gatherSpeech(fillColor);
+      case NodeEnum.PROCLAMATION: return this.announcement(fillColor);
+      case NodeEnum.API_CALL: return this.api(fillColor);
+      case NodeEnum.API_FLOW_CALL: return this.api(fillColor);
       case NodeEnum.HANGUP: return this.hangup(fillColor);
-      case NodeEnum.CREATE_TASK: return this.createTask(fillColor);
-      case NodeEnum.CREATE_CONTACTING_TASK: return this.createTask(fillColor);
-      case NodeEnum.UPDATE_CONTACTING_TASK: return this.createTask(fillColor);
-      case NodeEnum.FORWARD: return this.createTask(fillColor);
-      case NodeEnum.OUTBOUND_CALL: return this.createTask(fillColor);
-      case NodeEnum.REDIRECT: return this.redirect(fillColor);
-      case NodeEnum.WAIT_REDIRECT: return this.redirect(fillColor);
-      case NodeEnum.TATA_CTO: return this.data(fillColor);
-      case NodeEnum.TATA_RAT: return this.data(fillColor);
+      case NodeEnum.TASK: return this.createTask(fillColor);
+      case NodeEnum.TASK_ADV: return this.createTask(fillColor);
+      case NodeEnum.TASK_UPDATE: return this.createTask(fillColor);
+      case NodeEnum.REDIRECT_CALL: return this.createTask(fillColor);
+      case NodeEnum.REDIRECT_FLOW: return this.redirect(fillColor);
+      case NodeEnum.OTP: return this.data(fillColor);
+      case NodeEnum.ACCESS_T: return this.data(fillColor);
       default: return this.unknown();
     }
   }

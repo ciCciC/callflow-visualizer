@@ -32,13 +32,8 @@ A web component which gives the possibility to visualize the structure of a Call
 npm install
 ```
 
-### For single-run headless test (incl. test coverage)
-```
-npm test
-```
-
 ### To serve locally
-```
+```sh
 npm start
 ```
 

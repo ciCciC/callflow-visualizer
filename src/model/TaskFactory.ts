@@ -12,9 +12,9 @@ export class TaskFactory {
 
   static getTask(taskType: string): BaseTask {
     switch (taskType) {
-      case NodeEnum.TASK_ATTRS_STORE: return new TaskAttrsStoreTask();
-      case NodeEnum.CREATE_TASK: return new CreateTaskTask();
-      case NodeEnum.CREATE_CONTACTING_TASK: return new CreateTaskTask();
+      case NodeEnum.STORE: return new TaskAttrsStoreTask();
+      case NodeEnum.TASK: return new CreateTaskTask();
+      case NodeEnum.TASK_ADV: return new CreateTaskTask();
       default: return new DefaultTask();
     }
   }

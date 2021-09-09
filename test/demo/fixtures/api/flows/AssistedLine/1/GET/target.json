@@ -317,7 +317,7 @@
     {
       "id": "9c385ab3-153b-4c9f-8cdb-1f328ff7526c",
       "name": "ipaSearch",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaSearch",
@@ -383,7 +383,7 @@
     {
       "id": "2960214d-cc75-4a60-b332-105ecb3b1170",
       "name": "ipaLookUp",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaLookUp",
@@ -436,7 +436,7 @@
     {
       "id": "86242825-79cf-4aef-9124-b259ab97d398",
       "name": "ipaManagingEntitiesCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaManagingEntitiesCall",
@@ -474,7 +474,7 @@
     {
       "id": "cd0fcb68-610e-4d8f-891b-8eb98eeca99c",
       "name": "ipaGroupsCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaGroupsCall",
@@ -592,7 +592,7 @@
     {
       "id": "b4ea5a2d-9c6f-4aee-8dae-3b55e49ee959",
       "name": "crdRequest",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "crdRequest",
@@ -911,7 +911,7 @@
     {
       "id": "25401733-4f51-4b8b-8000-2f33ce45ad1a",
       "name": "kboApiNode",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "someApiNode",

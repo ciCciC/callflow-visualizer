@@ -115,9 +115,9 @@ export class NodeInfoView extends LitElement {
    */
   private initTask() {
     switch (this.nodeHolder.nodeType) {
-      case NodeEnum.TASK_ATTRS_STORE: this.nodeRenderer = this.nodeHolder.task as TaskAttrsStoreTask; break;
-      case NodeEnum.CREATE_TASK: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
-      case NodeEnum.CREATE_CONTACTING_TASK: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
+      case NodeEnum.STORE: this.nodeRenderer = this.nodeHolder.task as TaskAttrsStoreTask; break;
+      case NodeEnum.TASK: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
+      case NodeEnum.TASK_ADV: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
       default: this.nodeRenderer = this.nodeHolder.task as DefaultTask; break;
     }
   }
