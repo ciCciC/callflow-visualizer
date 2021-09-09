@@ -223,7 +223,7 @@
     {
       "id": "f980ef4c-172a-44cc-8ca1-c42078fe91c2",
       "name": "welcomeNode_866_nl-NL_fr-FR_en-GB",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -540,7 +540,7 @@
     {
       "id": "0a678074-0e07-4f5b-813a-3ec6b5790933",
       "name": "storeIPATaskAttrs",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -662,7 +662,7 @@
     {
       "id": "8bafaae5-8d6f-47c8-b449-267af979261b",
       "name": "debugMsg",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -734,7 +734,7 @@
     {
       "id": "7573300b-dc31-410f-a621-a06cfaf91468",
       "name": "create task",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 2001,
@@ -833,7 +833,7 @@
     {
       "id": "663bedd9-97d3-4fed-bfd4-851439a470c7",
       "name": "kboWrongInput_870",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -914,11 +914,11 @@
       "node_type": "API",
       "task": {
         "input_params": {
-          "service_name": "kboApiNode",
-          "trust": "API_TRUST_1.1",
-          "endpoints": "${hostName}",
+          "service_name": "someApiNode",
+          "trust": "SOME_API_TRUST",
+          "endpoints": "${someHostName}",
           "secure": false,
-          "url": "/api/twibel/customer/kbo/${kbo}",
+          "url": "/api/path/to/endpoint/${withValue}",
           "method": "GET",
           "query_params": {},
           "headers": {},
@@ -1240,7 +1240,7 @@
     {
       "id": "627a4631-2866-4784-aaed-f41824199579",
       "name": "kboMenuWrongInput_869",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -1292,6 +1292,5 @@
       ]
     }
   ],
-  "version": "1",
-  "flow_type": "CALLFLOW"
+  "version": "1"
 }
