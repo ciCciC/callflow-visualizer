@@ -39,3 +39,28 @@ npm start
 
 ### Sneak peak
 ![callFlow](/preview/callflow.PNG "Visualized CallFlow")
+
+## This project consist of several algorithms where each for a certain purpose.
+- CJ Algorithm (explanation to follow)
+- Dropout Algorithm
+
+### Dropout algorithm
+#### - Inspiration
+To come up with an appropriate algorithm for solving the drop out of node types problem with the ability to restructure the network graph in a dynamic fashion, I was inspired by the dropout function used in neural networks (NN). In NN, this function is usually used to deactivate features randomly (input and hidden neurons) to reduce overfitting in predictive models.
+
+#### - What is the behavior of the algorithm?
+The dropout algorithm basically removes nodetypes and reorders a sequence of small subtrees (related nodes and edges) of a network graph.
+
+The dropout algorithm is basically a method inside the project used to drop out nodes to simplify (reorder) the network graph. So, a function f with two inputs f(C, D) where C is the origin state of the CallFlow and D the dropout nodes. C is a set of Node features, C = { N1Ej, N2Ej , N3Ej, ...., NiEj } where E is a set of edges to their neighbours E = { E1, ..., Ej }. And D is a set of unique Strings, D = { D1, D2, D3, ..., Dp}. Also, we use the notation V for a subset of "IN" Nodes, V ⊂ C.
+First we fetch a subset of dropout nodes ( D ⊂ C ) including their related ( E ) edges also known as "EXITS". Next, we get a subset of "IN" Nodes ( V ⊂ C ) who do have the dropout Node as a edge(s) "EXIT" for the "gluing" process. At this stage we have a dropout Node ( D ) and its related "IN" Nodes ( V ) and "EXITS" edges ( E ). The next step is to "glue" V with E so N drops out from the graph C. Finally, we update the network graph C with a new structure C \ D.
+
+The images below shows the flow of the behavior inside a small part of a CallFlow with 30 nodes and 5 dropout nodes, lets call it T.
+
+1. Finding targeted nodetypes D
+![callFlow](/preview/1.png "step 1")
+
+2. Dropping out targeted nodes and gluing the edges E with the neighbors N
+![callFlow](/preview/2.png "step 2")
+
+3. After gluing the edges the network graph basically gets restructured
+![callFlow](/preview/3.png "step 3")
