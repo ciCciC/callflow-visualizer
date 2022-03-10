@@ -13,7 +13,7 @@ import {
   FONT_12,
   FONT_14,
   LIGHT_GRAY,
-  ORANGE,
+  PURPLE,
   WHITE
 } from "../../presets/stylepresets";
 import {CallFlowService} from "../../service/CallFlowService";
@@ -150,7 +150,7 @@ export class NetworkGraph extends LitElement {
 
       .tablinks, #openModalKibanaButton {
         background-color: ${WHITE};
-        color: ${ORANGE};
+        color: ${PURPLE};
         float: left;
         border: none;
         outline: none;
@@ -163,6 +163,14 @@ export class NetworkGraph extends LitElement {
       #openModalKibanaButton {
         position: absolute;
         z-index: 1;
+        left: 48px;
+        top: 40px;
+        box-shadow: ${BOX_LIGHT_SHADOW};
+        border-radius: ${BORDER_RADIUS};
+      }
+
+      #openModalKibanaButton:hover {
+        background-color: ${LIGHT_GRAY};
       }
 
       /* Change background color of buttons on hover */
@@ -172,7 +180,7 @@ export class NetworkGraph extends LitElement {
 
       /* Create an active/current tablink class */
       .tab button.active {
-        background-color: ${ORANGE};
+        background-color: ${PURPLE};
         color: ${WHITE};
       }
 
@@ -238,7 +246,7 @@ export class NetworkGraph extends LitElement {
       }
 
       .active, .collapsible:hover {
-        background-color: ${ORANGE};
+        background-color: ${PURPLE};
         color: ${WHITE};
       }
 
@@ -289,7 +297,7 @@ export class NetworkGraph extends LitElement {
         left: 48px;
         top: 40px;
         background-color: ${WHITE};
-        color: ${ORANGE};
+        color: ${PURPLE};
       }
 
       .algorithmViewMode {
@@ -309,8 +317,28 @@ export class NetworkGraph extends LitElement {
         float: right;
       }
 
-      .kibanaInfo {
-        font-size: ${FONT_14};
+      .infoButton{
+        background-color: ${LIGHT_GRAY};
+        border-radius: 4px;
+        border-style: hidden;
+        outline: none;
+        box-shadow: 0;
+        padding: 8px;
+      }
+
+      .infoButton:hover {
+        background-color: ${LIGHT_GRAY};
+        opacity: 0.8;
+      }
+
+      .modalShowButton{
+        background-color: ${PURPLE};
+        color: ${WHITE};
+        border-radius: 4px;
+        border-style: hidden;
+        outline: none;
+        box-shadow: 0;
+        padding: 8px;
       }
 
     `;
@@ -361,7 +389,7 @@ export class NetworkGraph extends LitElement {
                 <tr>
                   <td>${nodeHolder.name}</td>
                   <td>
-                    <button font14 @click="${() => this.openLeftSideBar(nodeHolder)}">?</button>
+                    <button class="infoButton" font14 @click="${() => this.openLeftSideBar(nodeHolder)}">?</button>
                   </td>
                 </tr>
               `)}
@@ -378,11 +406,10 @@ export class NetworkGraph extends LitElement {
         <div class="modal-content">
           <span class="close" @click="${() => this.closeModalListener()}">&times;</span>
           <div>
-            <p class="kibanaInfo">Go to Kibana. Query on CJID or Call SID. Scroll all the way down
-              until your scrolling stops, cause we need all node names.
-              Then copy the data from -> Inspect -> Response -> Copy to clipboard. And then paste it in the text area.</p>
-            <textarea id="kibanaLogs"></textarea>
-            <button class="float-right" font14 @click="${() => this.showCustomerJourneyListener()}">Show</button>
+            <textarea id="kibanaLogs">
+              ${this.exampleKibanaSteps(this.callFlow?.name!)}
+            </textarea>
+            <button class="modalShowButton" class="float-right" font14 @click="${() => this.showCustomerJourneyListener()}">Show</button>
           </div>
         </div>
       </div>
@@ -616,7 +643,9 @@ export class NetworkGraph extends LitElement {
     if(textarea.value.toLowerCase().search('[<>]') > -1){
       return;
     }
-    const kibanaSteps = this.parse(textarea.value);
+    
+    const kibanaSteps = textarea.value.split("\n").map(value => value.trimStart()).filter(value => value.length > 0);
+    
     const clusteredNodes = NodeHolderService.getGroupedIdsByName(kibanaSteps);
     const rootNode = this.callFlow?.nodeMap.get(this.callFlow?.topNodeId)!
     const kibanaRootIndex = kibanaSteps.indexOf(rootNode.name, 0)
@@ -662,12 +691,6 @@ export class NetworkGraph extends LitElement {
     }
 
     this.createCustomerJourneyGraph();
-  }
-
-  private parse(value: string): string [] {
-    const parsedHits = JSON.parse(value).hits.hits;
-    const cleanedData = parsedHits.map((hit: any) => hit.fields.node).flat().filter((nodeName:any) => nodeName != undefined).reverse();
-    return cleanedData;
   }
 
   private createCustomerJourneyGraph(){
@@ -767,5 +790,117 @@ export class NetworkGraph extends LitElement {
         groupedDiv.style.height = groupHeight > 400 ? `${400}px` : `${groupHeight}px`
       }
     }
+  }
+
+  private exampleKibanaSteps(callFlowName: string): string {
+    switch(callFlowName){
+      case 'AssistedLine': return this.kibanaAssisted();
+      case 'DailyLine': return this.kibanaDaily();
+      default : return '';
+    }
+  }
+
+  private kibanaAssisted(): string {
+    return `
+    static_statistics_writer_210
+    session_statistics_writer_210
+    welcomeSubflow_867_Begin
+    welcomeNode_866_nl-NL_fr-FR_en-GB
+    chooseLanguage_863_nl-NL_fr-FR_en-GB
+    ipaSearch
+    formatPhone
+    storeUUID
+    welcomeSubflow868_End
+    ipaLookUp
+    writeIPAStatistics
+    saveRoutingVals_869
+    storeIPAValues
+    storeIPATaskAttrs
+    ipaManagingEntitiesCall
+    ipaGroupsCall
+    kboMenu_870
+    create task
+    create task
+    lineNameMapper
+    lineNameMapper
+    crdRequest
+    debugMsg
+    pdlCodeMapperNode`;
+  }
+
+  private kibanaDaily(): string {
+    return `
+    dtmfID
+    checkESS
+    announcementGlobalCLT
+    addTaskAttrDTMFID
+    announcementGlobalDBP
+    session_statistics_writer_161
+    session_statistics_writer_161
+    environmentMapper635
+    addTaskAttrGeneral
+    init
+    Welcome_636_
+    announce1
+    mapTwilioLanguages
+    mainMenu
+    announce2
+    OH_DBP_General
+    menu1Announcement
+    menu1NonDigitalAnnouncement
+    formatPhone
+    ipaSearch
+    ingIdMenu
+    gatherSpeechPrequelNode
+    ingIdMenuFailureAnnouncement
+    gatherSpeechFR
+    verifySpeechText
+    saveSpeechText
+    handleVaApiResponseNode
+    TPA_Call
+    sendIntentToDatalake
+    playMsg
+    OH_skillMapping
+    endSTT
+    legalRecording622
+    isEssPriorityZone12
+    announce3
+    isProfessional
+    isEss
+    analyseRouting
+    AssistedCallCallingNumber
+    defaultTaskAttr
+    germanCheckExit637
+    germanCheckEntry637
+    createTask
+    germanCheckKeepLanguage637
+    createTask
+    parameterResolver
+    languageProvider414
+    lapMarker
+    productAnnouncement_resolvedProduct
+    superCircleAnnouncement_resolvedProduct
+    waitingMusicFrom30Seconds416
+    productAnnouncement_resolvedProduct
+    lapMarker
+    waitingMusicFrom30Seconds416
+    superCircleAnnouncement_resolvedProduct
+    productAnnouncement_resolvedProduct
+    lapMarker
+    waitingMusicFrom30Seconds416
+    superCircleAnnouncement_resolvedProduct
+    waitingMusicFrom30Seconds416
+    productAnnouncement_resolvedProduct
+    superCircleAnnouncement_resolvedProduct
+    lapMarker
+    lapMarker
+    productAnnouncement_resolvedProduct
+    waitingMusicFrom30Seconds416
+    superCircleAnnouncement_resolvedProduct
+    productAnnouncement_resolvedProduct
+    superCircleAnnouncement_resolvedProduct
+    waitingMusicFrom30Seconds416
+    lapMarker
+    c8f1c525-0735-46d3-887e-5768030d6f7b`;
   }
 }

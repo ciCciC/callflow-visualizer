@@ -1,0 +1,24 @@
+[
+  {
+    "name": "DailyLine",
+    "version": "1",
+    "revisions": [
+      {
+        "name": "DailyLine",
+        "version": "1",
+        "revType": "CREATED"
+      }
+    ]
+  },
+  {
+    "name": "AssistedLine",
+    "version": "1",
+    "revisions": [
+      {
+        "name": "AssistedLine",
+        "version": "1",
+        "revType": "CREATED"
+      }
+    ]
+  }
+]

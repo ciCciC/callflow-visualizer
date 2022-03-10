@@ -3,8 +3,8 @@
   "name": "callflow-visualizer",
   "description": "Flow visualizer of call structures",
   "author": "Koray Poyraz",
-  "email": "koraypoyraz1@gmail.com",
-  "homepage": "somehomepage",
+  "email": "",
+  "homepage": "https://github.com/ciCciC/callflow-visualizer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -65,7 +65,6 @@
     "stylelint": "^13.13.1",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.8.0",
-    "swig": "^1.4.2",
     "ts-loader": "^6.2.1",
     "typescript": "^3.9.7",
     "typescript-lit-html-plugin": "^0.9.0",
@@ -76,8 +75,8 @@
   },
   "dependencies": {
     "@webcomponents/webcomponentsjs": "^2.5.0",
-    "axios": "^0.19.0",
-    "immer": "^7.0.3",
+    "axios": "^0.21.1",
+    "immer": "^9.0.5",
     "lit-element": "^2.5.1",
     "lodash": "^4.17.20",
     "regenerator-runtime": "^0.13.3",
@@ -90,16 +89,9 @@
     "build:watch": "tsc --watch",
     "clean": "node test/clean.js",
     "lint": "eslint src --ext .ts",
-    "full-test": "npm run lint && npm run test && npm run build",
-    "test": "npm run clean && karma start test/karma.conf.js --single-run",
-    "test-watch": "npm run clean && cross-env debug=true karma start test/karma.conf.js",
     "prerelease": "npm version prerelease --reid=SNAPSHOT",
     "release": "npm version",
     "webpack-run": "webpack --config test/webpack.dev.config.js --progress --watch --mode development",
-    "serve-without-mocks": "npm run clean && concurrently 'webpack --config test/webpack.dev.config.js --progress --watch --mode development' 'node test/demo/server.js'",
-    "serve-local-proxy": "npm run clean && concurrently 'webpack --config test/webpack.dev.config.js --progress --watch --mode development' 'node test/demo/server.js local-proxy'",
-    "serve-local": "npm run clean && concurrently \"webpack --config test/webpack.dev.config.js --progress --watch --mode development\" \"node test/demo/server.js local\"",
-    "start-server": "node test/demo/server.js",
     "start-static-server": "node test/demo/static-server.js",
     "start": "run-p clean webpack-run start-static-server"
   },
@@ -112,9 +104,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "lolz@someurl"
-  },
-  "browserslist": [
-    "last 2 versions"
-  ]
+    "url": "https://github.com/ciCciC/callflow-visualizer.git"
+  }
 }

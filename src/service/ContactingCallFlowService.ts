@@ -9,6 +9,7 @@ import {CallFlowBuilder} from "../model/CallFlowBuilder";
 export class ContactingCallFlowService {
 
   private static readonly chosenCallFlowConfig = new ReplaySubject<DummyCallFlowConfig>(1);
+  private static resourceUrl = '/api/flows';
 
   static setChosenCallFlowVersion(callFlowVersion: DummyCallFlowConfig) {
     this.chosenCallFlowConfig.next(callFlowVersion);
@@ -23,22 +24,13 @@ export class ContactingCallFlowService {
   }
 
   static async getCallFlowConfigs(): Promise<CallFlowConfig[]> {
-    const resourceUrl = '/api/contacting-callflows/callflow-config';
-    const result = await axios.get(resourceUrl, {transformResponse: [this.transformCallFlowConfig]});
+    const result = await axios.get(this.resourceUrl, {transformResponse: [this.transformCallFlowConfig]});
     return result.data;
   }
 
   static async getCallFlow(callFlowName: string, version: string): Promise<CallFlow> {
-    // test case: small callFlow
-    callFlowName = 'AssistedChannelsHighSpeedLine';
-    version = '1.0.7-Mahesh';
-
-    // test case: big callFlow
-    // callFlowName = 'DBPGeneral';
-    // version = '1.6.19-intents';
-
-    const resourceUrl = `/api/contacting-callflows/callflow-config/${callFlowName}/${version}`;
-    const result = await axios.get(resourceUrl, {transformResponse: [this.transformCallFlow]});
+    const url = `${this.resourceUrl}/${callFlowName}/${version}`;
+    const result = await axios.get(url, {transformResponse: [this.transformCallFlow]});
     return result.data;
   }
 
@@ -54,7 +46,7 @@ export class ContactingCallFlowService {
       activeVersion: el.version,
       revisions: el.revisions.map((rev: any) => (<Revision>{
         version: rev.version,
-        revType: rev.rev_type
+        revType: rev.revType
       }))
     }
     )

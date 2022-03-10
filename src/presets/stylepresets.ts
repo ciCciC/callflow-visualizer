@@ -3,7 +3,7 @@ import { CSSResult, css } from 'lit-element';
 export const FONT_12: CSSResult = css`12px`;
 export const FONT_14: CSSResult = css`14px`;
 export const BORDER_RADIUS: CSSResult = css`10px`;
-export const ORANGE: CSSResult = css`#ff8000`;
+export const PURPLE: CSSResult = css`#8c00c4`;
 export const WHITE: CSSResult = css`#ffffff`;
 export const LIGHT_GREEN: CSSResult = css`#00cb00`;
 export const LIGHT_GREEN_HOVER: CSSResult = css`#00b800`;

@@ -7,7 +7,7 @@ import {BaseRender} from "../../model/BaseRender";
 import {TaskAttrsStoreTask} from "../../model/TaskAttrsStoreTask";
 import {CreateTaskTask} from "../../model/CreateTaskTask";
 import {DefaultTask} from "../../model/DefaultTask";
-import {FONT_14, ORANGE, WHITE} from "../../presets/stylepresets";
+import {FONT_14, PURPLE, WHITE} from "../../presets/stylepresets";
 
 @customElement('node-info-view')
 export class NodeInfoView extends LitElement {
@@ -29,7 +29,7 @@ export class NodeInfoView extends LitElement {
     return css`
       .collapsible {
         background-color: ${WHITE};
-        color: ${ORANGE};
+        color: ${PURPLE};
         cursor: pointer;
         padding: 10px;
         width: 100%;
@@ -42,7 +42,7 @@ export class NodeInfoView extends LitElement {
       }
 
       .active, .collapsible:hover {
-        background-color: ${ORANGE};
+        background-color: ${PURPLE};
         color: ${WHITE};
       }
 
@@ -52,7 +52,7 @@ export class NodeInfoView extends LitElement {
 
       .collapsible:after {
         content: '\\002B';
-        color: ${ORANGE};
+        color: ${PURPLE};
         font-weight: bold;
         float: right;
         margin-left: 5px;
@@ -115,9 +115,9 @@ export class NodeInfoView extends LitElement {
    */
   private initTask() {
     switch (this.nodeHolder.nodeType) {
-      case NodeEnum.TASK_ATTRS_STORE: this.nodeRenderer = this.nodeHolder.task as TaskAttrsStoreTask; break;
-      case NodeEnum.CREATE_TASK: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
-      case NodeEnum.CREATE_CONTACTING_TASK: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
+      case NodeEnum.STORE: this.nodeRenderer = this.nodeHolder.task as TaskAttrsStoreTask; break;
+      case NodeEnum.TASK: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
+      case NodeEnum.TASK_ADV: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
       default: this.nodeRenderer = this.nodeHolder.task as DefaultTask; break;
     }
   }
