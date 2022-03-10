@@ -52,9 +52,9 @@ To come up with an appropriate algorithm for solving the drop out of node types 
 The dropout algorithm basically removes nodetypes and reorders a sequence of small subtrees (related nodes and edges) of a network graph.
 
 The dropout algorithm is basically a method inside the project used to drop out nodes to simplify (reorder) the network graph. So, a function f with two inputs f(C, D) where C is the origin state of the CallFlow and D the dropout nodes. C is a set of Node features, C = { N1Ej, N2Ej , N3Ej, ...., NiEj } where E is a set of edges to their neighbours E = { E1, ..., Ej }. And D is a set of unique Strings, D = { D1, D2, D3, ..., Dp}. Also, we use the notation V for a subset of "IN" Nodes, V ⊂ C.
-First we fetch a subset of dropout nodes ( D ⊂ C ) including their related ( E ) edges also known as "EXITS". Next, we get a subset of "IN" Nodes ( V ⊂ C ) who do have the dropout Node as a edge(s) "EXIT" for the "gluing" process. At this stage we have a dropout Node ( D ) and its related "IN" Nodes ( V ) and "EXITS" edges ( E ). The next step is to "glue" V with E so N drops out from the graph C. Finally, we update the network graph C with a new structure C \ D.
+First we fetch a subset of dropout nodes ( D ⊂ C ) including their related ( E ) edges also known as "EXITS". Next, we get a subset of "IN" Nodes ( V ⊂ C ) who do have the dropout Node as a edge(s) "EXIT" for the "gluing" process. At this stage we have a dropout Node ( D ) and its related "IN" Nodes ( V ) and "EXITS" edges ( E ). The next step is to "glue" V with E so N drops out from the graph C. Finally, we update the network graph C with a new structure.
 
-The images below shows the flow of the behavior inside a small part of a CallFlow with 30 nodes and 5 dropout nodes, lets call it T.
+The images below shows the flow of the behavior inside a small part of a CallFlow with 30 nodes and 5 dropout nodes, lets call it T. Normally, this process is applied to a network graph with more than 200 nodes and 800 edges.
 
 1. Finding targeted nodetypes D
 
