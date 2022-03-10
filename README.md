@@ -40,7 +40,7 @@ npm start
 ### Sneak peak
 ![callFlow](/preview/callflow.PNG "Visualized CallFlow")
 
-## This project consist of several algorithms where each for a certain purpose.
+## This project consist of several algorithms
 - CJ Algorithm (explanation to follow)
 - Dropout Algorithm
 
@@ -57,10 +57,13 @@ First we fetch a subset of dropout nodes ( D ⊂ C ) including their related ( E
 The images below shows the flow of the behavior inside a small part of a CallFlow with 30 nodes and 5 dropout nodes, lets call it T.
 
 1. Finding targeted nodetypes D
-![callFlow](/preview/1.png "step 1")
+
+![callFlowA](/preview/1.png "step 1")
 
 2. Dropping out targeted nodes and gluing the edges E with the neighbors N
-![callFlow](/preview/2.png "step 2")
+
+![callFlowB](/preview/2.png "step 2")
 
 3. After gluing the edges the network graph basically gets restructured
-![callFlow](/preview/3.png "step 3")
+
+![callFlowC](/preview/3.png "step 3")
