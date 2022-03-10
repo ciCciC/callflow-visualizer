@@ -58,12 +58,12 @@ The images below shows the flow of the behavior inside a small part of a CallFlo
 
 1. Finding targeted nodetypes D
 
-![callFlowA](/preview/1.png "step 1")
+<img src="/preview/1.png" alt="drawing" width="500" height="500"/>
 
 2. Dropping out targeted nodes and gluing the edges E with the neighbors N
 
-![callFlowB](/preview/2.png "step 2")
+<img src="/preview/2.png" alt="drawing" width="500" height="500"/>
 
 3. After gluing the edges the network graph basically gets restructured
 
-![callFlowC](/preview/3.png "step 3")
+<img src="/preview/3.png" alt="drawing" width="500" height="500"/>
