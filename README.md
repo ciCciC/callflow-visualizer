@@ -41,11 +41,11 @@ npm start
 #### Network
 ![callFlow](/preview/callflow.PNG "Visualized CallFlow")
 
-#### Highlight edges (red color)
+#### Highlight edges on mouse hover (red color)
 ![callFlow](/preview/hi_edges.png "Visualized CallFlow")
 
-#### Highlight condition of an edge (condition box)
-![callFlow](/preview/hi_edges.png "Visualized CallFlow")
+#### Highlight condition of an edge on mouse hover
+![callFlow](/preview/hi_con.png "Visualized CallFlow")
 
 ## This project consist of several algorithms
 - CJ Algorithm (explanation to follow)
