@@ -42,10 +42,10 @@ npm start
 ![callFlow](/preview/callflow.PNG "Visualized CallFlow")
 
 #### Highlight IN and OUT edges on mouse hover (red color)
-<img src="/preview/hi_edges.png" alt="drawing" width="750" height="600"/>
+<img src="/preview/hi_edges.png" alt="drawing" width="600" height="600"/>
 
 #### Highlight condition of an edge on mouse hover
-<img src="/preview/hi_con.png" alt="drawing" width="750" height="600"/>
+<img src="/preview/hi_con.png" alt="drawing" width="600" height="600"/>
 
 ## This project consist of several algorithms
 - CJ Algorithm (explanation to follow)
