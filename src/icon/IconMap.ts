@@ -19,7 +19,7 @@ export class IconMap {
   static getIcon(nodeType?: NodeEnum | string): any {
     switch (nodeType) {
       case NodeEnum.ROOT: return rootIcon;
-      case NodeEnum.STORE: return dataNodeIcon;
+      case NodeEnum.TASK_STORE: return dataNodeIcon;
       case NodeEnum.DATA: return dataNodeIcon;
       case NodeEnum.MSG_PLAY: return messageNodeIcon;
       case NodeEnum.GATHER: return menuNodeIcon;
@@ -43,7 +43,7 @@ export class IconMap {
   static getIconAsString(nodeType?: NodeEnum | string, fillColor: string): string {
     switch (nodeType) {
       case NodeEnum.ROOT: return this.root(fillColor);
-      case NodeEnum.STORE: return this.data(fillColor);
+      case NodeEnum.TASK_STORE: return this.data(fillColor);
       case NodeEnum.DATA: return this.data(fillColor);
       case NodeEnum.MSG_PLAY: return this.message(fillColor);
       case NodeEnum.GATHER: return this.menu(fillColor);

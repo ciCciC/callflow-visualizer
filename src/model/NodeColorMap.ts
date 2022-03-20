@@ -13,7 +13,7 @@ export class NodeColorMap {
       case NodeEnum.HANGUP: return '#ff0505';  // red
       case NodeEnum.MSG_PLAY: return '#05e6ff';  // light blue
       case NodeEnum.API_CALL: return '#035afc';  // blue
-      case NodeEnum.STORE: return '#b503fc';  // purple
+      case NodeEnum.TASK_STORE: return '#b503fc';  // purple
       case NodeEnum.TASK: return '#00b600';  // green
       case NodeEnum.TASK_ADV: return '#00b600';  // green
       case NodeEnum.TASK_UPDATE: return '#00b600';  // green

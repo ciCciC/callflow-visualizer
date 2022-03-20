@@ -360,8 +360,18 @@ export class NetworkGraph extends LitElement {
       </div>
       <div id="0" class="tabcontent" style="position: relative">
         <div class="callFlowName">
-          <label>${this.callFlow?.name}</label><br>
-          <label>${this.callFlow?.version}</label>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Nods</th>
+              <th>Edges</th>
+            </tr>
+            <tr>
+              <td>${this.callFlow?.name}</td>
+              <td>${this.callFlow?.nodeMap.size}</td>
+              <td>${this.edgeList?.length}</td>
+            </tr>
+          </table>
         </div>
         ${this.callFlow?.viewMode! == ViewModeEnum.DEACTIVATE || this.callFlow?.viewMode == ViewModeEnum.DROPOUT ? html`<div class="algorithmViewMode">
           <div>
@@ -371,6 +381,9 @@ export class NetworkGraph extends LitElement {
           <div>
             <input type="radio" id="DROPOUT" name="viewType" value="${ViewModeEnum.DROPOUT}" @click="${(e:any) => this.computeAlgorithmListener(e)}">
             <label for="DROPOUT">${ViewModeEnum.DROPOUT}</label>
+          </div>
+          <div>
+            <button @click="${(_: any) => this.networkGraph!.stopSimulation()}">Stop simulation</button>
           </div>
         </div>` : ''}
         <div class="network-graph" id="callFlow-network"></div>
@@ -643,9 +656,9 @@ export class NetworkGraph extends LitElement {
     if(textarea.value.toLowerCase().search('[<>]') > -1){
       return;
     }
-    
+
     const kibanaSteps = textarea.value.split("\n").map(value => value.trimStart()).filter(value => value.length > 0);
-    
+
     const clusteredNodes = NodeHolderService.getGroupedIdsByName(kibanaSteps);
     const rootNode = this.callFlow?.nodeMap.get(this.callFlow?.topNodeId)!
     const kibanaRootIndex = kibanaSteps.indexOf(rootNode.name, 0)

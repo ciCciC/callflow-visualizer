@@ -71,7 +71,7 @@
     {
       "id": "f0de8094-63e9-4363-90e2-7f897c692234",
       "name": "addTaskAttrDTMFID",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -93,7 +93,7 @@
     {
       "id": "94e9de1b-47a4-4bd8-bb8a-19027849cba3",
       "name": "OH_skillMapping",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "OH_skillMapping",
@@ -149,7 +149,7 @@
     {
       "id": "a715877b-42be-4e55-bd08-ca22b10dea9a",
       "name": "CA_dynamic",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "${closingAnnouncement}_${language}"
@@ -174,7 +174,7 @@
     {
       "id": "4fa5db28-9f02-4cb6-9ee8-90e2b0e085f8",
       "name": "TPA_Call",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "TPA_Call",
@@ -294,7 +294,7 @@
       "max_retries": 2,
       "timeout_node": "e3d61456-d79d-47d4-8685-a634ff5e1fe2",
       "max_retries_node": "e3d61456-d79d-47d4-8685-a634ff5e1fe2",
-      "node_type": "GATHER_SPEECH",
+      "node_type": "SPEECH_MODEL",
       "task": {
         "input_params": {
           "messages": [
@@ -336,7 +336,7 @@
       "max_retries": 2,
       "timeout_node": "e3d61456-d79d-47d4-8685-a634ff5e1fe2",
       "max_retries_node": "e3d61456-d79d-47d4-8685-a634ff5e1fe2",
-      "node_type": "GATHER_SPEECH",
+      "node_type": "SPEECH_MODEL",
       "task": {
         "input_params": {
           "messages": [
@@ -554,7 +554,7 @@
     {
       "id": "ff750728-4696-42e8-97a6-6153eca1049b",
       "name": "playMsg",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -755,7 +755,7 @@
     {
       "id": "4107d2a3-f226-4a08-af1c-b574521ec677",
       "name": "informOfWrongChoice",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -863,7 +863,7 @@
     {
       "id": "26f11b4a-395e-4559-a99d-17a817783c45",
       "name": "endCallMessage",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -908,7 +908,7 @@
     {
       "id": "15c95319-5abb-42bb-95a1-aded183916fd",
       "name": "legalRecording622",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -973,7 +973,7 @@
     {
       "id": "416e3198-7ed6-46d5-ba7e-2489ad62beea",
       "name": "menu11Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt11_${language}"
@@ -993,7 +993,7 @@
     {
       "id": "e82eda92-2137-4c05-9c7a-0edb5ed51702",
       "name": "menu111Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt111_${language}"
@@ -1013,7 +1013,7 @@
     {
       "id": "e280c64f-9b1c-4af6-bd1e-45bffd2fefe9",
       "name": "menu1111Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt1111_${language}"
@@ -1125,7 +1125,7 @@
     {
       "id": "1ac9bddc-283d-4c75-b26e-81fce0769d08",
       "name": "openChecker_PI_EO_624",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "openChecker_PI_EO_624",
@@ -1197,7 +1197,7 @@
     {
       "id": "2871e1d2-0e1e-4c1d-885a-e0ef31dd2bc5",
       "name": "extraOptionAnnouncement623",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "${EO_Key_623}"
@@ -1315,7 +1315,7 @@
     {
       "id": "352ae43b-8359-4f1b-82ea-9bc023859d3c",
       "name": "openChecker_DBP_EO_626",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "openChecker_DBP_EO_626",
@@ -1387,7 +1387,7 @@
     {
       "id": "acbce9c2-15a6-4d94-9a07-6620ab275468",
       "name": "extraOptionAnnouncement625",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "${EO_Key_625}"
@@ -1505,7 +1505,7 @@
     {
       "id": "963c5961-f724-4d0b-8a5a-412a12e73c14",
       "name": "openChecker_BUS_EO_628",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "openChecker_BUS_EO_628",
@@ -1577,7 +1577,7 @@
     {
       "id": "aa09352f-27aa-4fba-b22d-2bed58cbaf7b",
       "name": "extraOptionAnnouncement627",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "${EO_Key_627}"
@@ -1672,7 +1672,7 @@
     {
       "id": "186e0c20-390d-432d-b8bc-07caa9782d81",
       "name": "OH_DBP_Map",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "OH_DBP_Map",
@@ -2430,7 +2430,7 @@
     {
       "id": "687ed905-b6f1-46fa-a1ce-3677b5d6367f",
       "name": "redirectToLending",
-      "node_type": "REDIRECT",
+      "node_type": "REDIRECT_FLOW",
       "task": {
         "input_params": {
           "url": "/api/contacting-callflows/transfer-calls/LEN_ICC?cjid=${CJID}&origin=${origin}"
@@ -2444,7 +2444,7 @@
     {
       "id": "5184a7d5-1238-494e-b1b7-c1a8da085103",
       "name": "redirectToInvestments",
-      "node_type": "REDIRECT",
+      "node_type": "REDIRECT_FLOW",
       "task": {
         "input_params": {
           "url": "/api/contacting-callflows/transfer-calls/Invest_ICC?cjid=${CJID}&origin=${origin}"
@@ -2458,7 +2458,7 @@
     {
       "id": "b32c257e-a39a-40e8-aba4-681445b2595f",
       "name": "redirectToInsurance",
-      "node_type": "REDIRECT",
+      "node_type": "REDIRECT_FLOW",
       "task": {
         "input_params": {
           "url": "/api/contacting-callflows/transfer-calls/DBP_Insurance?cjid=${CJID}&origin=${origin}"
@@ -2472,7 +2472,7 @@
     {
       "id": "365420a3-9d51-4d78-b0fa-faf51499e39c",
       "name": "redirectToDbbGeneral",
-      "node_type": "REDIRECT",
+      "node_type": "REDIRECT_FLOW",
       "task": {
         "input_params": {
           "url": "/api/contacting-callflows/transfer-calls/DBBusinessGeneralLines?cjid=${CJID}&language=${language}"
@@ -2486,7 +2486,7 @@
     {
       "id": "6b734b82-070c-4750-a4df-b96946eea4aa",
       "name": "redirectDynamically",
-      "node_type": "REDIRECT",
+      "node_type": "REDIRECT_FLOW",
       "task": {
         "input_params": {
           "url": "/api/contacting-callflows/transfer-calls/${callFlowName}?language=${language}&origin=${origin}&isCallBotRedirect=true&cjid=${CJID}&menuId=${menuId}"
@@ -2500,7 +2500,7 @@
     {
       "id": "a001179d-5615-49df-8f7b-a5a3b105a550",
       "name": "forwardToCardBlockAgency",
-      "node_type": "FORWARD",
+      "node_type": "REDIRECT_CALL",
       "task": {
         "input_params": {
           "number": "+3270344344",
@@ -2536,7 +2536,7 @@
     {
       "id": "5f8182d6-3ed2-457a-8c5b-336562ee8c86",
       "name": "legalRecording630",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -2581,7 +2581,7 @@
     {
       "id": "4e4dd22e-ba8f-45ac-8542-6c977767faf7",
       "name": "createFallbackTask",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 750,
@@ -2610,7 +2610,7 @@
     {
       "id": "03eba3c5-d8a8-4ae0-b43d-9cf3ba717f5c",
       "name": "OH_DBP_General",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "OH_DBP_General",
@@ -2661,7 +2661,7 @@
     {
       "id": "44a0ec30-3a1d-434b-877a-cac266515fec",
       "name": "CA_DBP.General",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_Closed_nl-NL"
@@ -2728,7 +2728,7 @@
     {
       "id": "006b1d53-0b5c-41db-b0af-041d53dd8ecd",
       "name": "otpFromContactMeAPI",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "otpFromContactMeAPI",
@@ -2812,7 +2812,7 @@
     {
       "id": "d373be11-cef0-4652-b257-27c5db771054",
       "name": "TPA_Call",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "TPA_Call",
@@ -2974,7 +2974,7 @@
     {
       "id": "b0e04b7b-107d-4983-abec-4b71bdf581fb",
       "name": "storeAuthTaskAttributes",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -2997,7 +2997,7 @@
     {
       "id": "15357eb4-197c-43d3-9f21-9feed2a0f9db",
       "name": "OH_DBP_General",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "OH_DBP_General",
@@ -3053,7 +3053,7 @@
     {
       "id": "d72b3b56-7cc1-48b5-b69b-2e7798d87953",
       "name": "dbpGeneralClosingAnn",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_Closed_With_Blocking_Reachable_${language}"
@@ -3145,7 +3145,7 @@
     {
       "id": "bac4fa20-a309-46b2-a2d0-06a61ff29d2c",
       "name": "addTaskAttrGeneral",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -3167,7 +3167,7 @@
     {
       "id": "b43d024c-6c1e-4ff7-a1aa-cae9e2eb3988",
       "name": "addTaskAttrESS",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -3264,7 +3264,7 @@
     {
       "id": "843f4275-0228-4a3f-b97b-c6d8c3c8f4e4",
       "name": "announce1",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_0_${language}"
@@ -3294,7 +3294,7 @@
     {
       "id": "801c74a1-3003-4645-8d51-f671b8a33331",
       "name": "announce2",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_1_${language}"
@@ -3314,7 +3314,7 @@
     {
       "id": "d9cc6e71-2de6-4296-9226-bca4de929130",
       "name": "menu1Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt1_${language}"
@@ -3339,7 +3339,7 @@
     {
       "id": "1712cd62-29b9-471d-808b-282621d6326b",
       "name": "menu2Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt2_${language}"
@@ -3359,7 +3359,7 @@
     {
       "id": "427d5202-162a-40ae-b18e-002b6aacebc9",
       "name": "menu1NonDigitalAnnouncement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt1_non_dig_${language}"
@@ -3379,7 +3379,7 @@
     {
       "id": "c18e0e9a-48a4-4265-9b80-1c926193c8a0",
       "name": "announcementGlobalCLT",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "CLT_All"
@@ -3399,7 +3399,7 @@
     {
       "id": "c36da571-c79b-4594-bbc3-0ca2e5043d39",
       "name": "announcementGlobalDBP",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_All"
@@ -3419,7 +3419,7 @@
     {
       "id": "f9bc4e8f-1602-45fc-8fca-89cb4541636e",
       "name": "Welcome_636_",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -3467,7 +3467,7 @@
     {
       "id": "3e226dad-eb2c-4a96-b688-88673d314707",
       "name": "ipaSearch",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaSearch",
@@ -3533,7 +3533,7 @@
     {
       "id": "0316bb1c-4a1b-4050-9520-5ba042288491",
       "name": "ipaLookUp",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaLookUp",
@@ -3586,7 +3586,7 @@
     {
       "id": "1a64dbd3-5781-409b-87db-4bc0c67415d1",
       "name": "ipaManagingEntitiesCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaManagingEntitiesCall",
@@ -3624,7 +3624,7 @@
     {
       "id": "7189efd0-04b0-486e-b8dd-ab9ec96ae673",
       "name": "ipaGroupsCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaGroupsCall",
@@ -3690,7 +3690,7 @@
     {
       "id": "cd395511-2674-4c5c-b9a8-6e3df951f237",
       "name": "storeIPATaskAttrs",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -3752,7 +3752,7 @@
     {
       "id": "fe978c39-1986-4a82-827c-66fe509442b3",
       "name": "ingIdMenuFailureAnnouncement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "ING_ID_Failure_${language}"
@@ -3782,7 +3782,7 @@
     {
       "id": "68dec56b-a9d2-4b0a-82d1-177313dec7a0",
       "name": "onIngIdMenuFailure",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -3928,7 +3928,7 @@
     {
       "id": "80a43d14-3ad1-4a5a-acde-790729a0ba59",
       "name": "ipaLookUp",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaLookUp",
@@ -3991,7 +3991,7 @@
     {
       "id": "f3bda831-b6da-4665-a8f5-19992bc70c15",
       "name": "ipaManagingEntitiesCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaManagingEntitiesCall",
@@ -4029,7 +4029,7 @@
     {
       "id": "8d50ca5e-9ad8-4405-9e0d-68535b0ac47d",
       "name": "ipaGroupsCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaGroupsCall",
@@ -4095,7 +4095,7 @@
     {
       "id": "9e9ecbed-6e03-4294-9d2d-624448865d4f",
       "name": "storeIPATaskAttrs",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -4157,7 +4157,7 @@
     {
       "id": "e4586704-3c2e-4a16-9c23-77bef1dbd237",
       "name": "ingIdMenuFailureAnnouncement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "ING_ID_Failure_${language}"
@@ -4177,7 +4177,7 @@
     {
       "id": "f9e3f513-59d7-4b70-b047-6303f3cbbd82",
       "name": "onIngIdMenuFailure",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -4323,7 +4323,7 @@
     {
       "id": "03d80e30-faba-44cf-ba37-ade7479a67b8",
       "name": "ipaLookUp",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaLookUp",
@@ -4376,7 +4376,7 @@
     {
       "id": "5301ec8a-c9ac-470f-94ce-798f27298e50",
       "name": "ipaManagingEntitiesCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaManagingEntitiesCall",
@@ -4414,7 +4414,7 @@
     {
       "id": "76d42fba-3866-4173-a783-4b9f29aae619",
       "name": "ipaGroupsCall",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "ipaGroupsCall",
@@ -4480,7 +4480,7 @@
     {
       "id": "a03e8974-2cc3-481d-befc-6882d3ddd13d",
       "name": "storeIPATaskAttrs",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -4722,7 +4722,7 @@
     {
       "id": "98d02f57-ea76-4a16-8ed5-e991efea75a9",
       "name": "contactingAPINode638",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "contactingAPINode638",
@@ -4816,7 +4816,7 @@
     {
       "id": "5cc108bd-d1e0-49e2-8fb3-c0753e84e935",
       "name": "TPA_Call",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "TPA_Call",
@@ -4896,7 +4896,7 @@
     {
       "id": "4da7cb54-9342-4edb-8abb-e2778979bda7",
       "name": "wrongBlockOption",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5013,7 +5013,7 @@
     {
       "id": "c2fb2d59-21a9-4e0e-b581-83394f4429f2",
       "name": "howToUnblock",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5082,7 +5082,7 @@
     {
       "id": "e0b2089f-4d3c-449f-b0e4-121a904e6d78",
       "name": "oops",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5154,7 +5154,7 @@
     {
       "id": "da7f5f23-8e2d-4619-b0e2-6f094bafba66",
       "name": "subscriptionSuccesfullyBlocked",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5199,7 +5199,7 @@
     {
       "id": "a2985692-b753-4d95-aad5-f0fab8fb3435",
       "name": "TPA_Call",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "TPA_Call",
@@ -5237,7 +5237,7 @@
     {
       "id": "bcdb6731-8f9f-4dc5-941c-a6f2c68fdb19",
       "name": "TPA_Call",
-      "node_type": "API",
+      "node_type": "API_CALL",
       "task": {
         "input_params": {
           "service_name": "TPA_Call",
@@ -5350,7 +5350,7 @@
     {
       "id": "860f2967-fca3-406c-976a-c7f85615723e",
       "name": "sayWhatGotBlocked",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5483,7 +5483,7 @@
     {
       "id": "93b6b8aa-80bb-43ce-965e-283a02febda3",
       "name": "afterMapMessage",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5528,7 +5528,7 @@
     {
       "id": "35265a1a-faaf-4dfa-a11e-1f93f795601c",
       "name": "menu2Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt20_${language}"
@@ -5548,7 +5548,7 @@
     {
       "id": "5233fc0d-75af-499c-aeac-533b7bb06b74",
       "name": "menu10Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt10_${language}"
@@ -5568,7 +5568,7 @@
     {
       "id": "d01a20e8-c4c7-4034-bc98-9a511ade237b",
       "name": "menu110Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt110_${language}"
@@ -5588,7 +5588,7 @@
     {
       "id": "349fac09-b314-4710-8b09-6c7e84ced3d4",
       "name": "menu115Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt115_${language}"
@@ -5608,7 +5608,7 @@
     {
       "id": "63d17ed6-be66-481f-a552-e66a1b56a246",
       "name": "menu112Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt112_${language}"
@@ -5628,7 +5628,7 @@
     {
       "id": "b40fd65c-03c6-44d9-97f5-24038c832baf",
       "name": "menu1112Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt1112_${language}"
@@ -5648,7 +5648,7 @@
     {
       "id": "484cc894-efc6-4b6d-b23e-9624d72dda3c",
       "name": "menu113Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt113_${language}"
@@ -5668,7 +5668,7 @@
     {
       "id": "bec6216d-c03e-47ea-a4c4-c5fdbffcdccd",
       "name": "menu114Announcement",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_menuopt114_${language}"
@@ -5688,7 +5688,7 @@
     {
       "id": "8b7b172c-238e-4724-94ac-758b3afe61f8",
       "name": "announce3",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_2_${language}"
@@ -5708,7 +5708,7 @@
     {
       "id": "dea0df72-e3b1-4ee3-8dca-9f1593770204",
       "name": "announce3",
-      "node_type": "ANNOUNCEMENT",
+      "node_type": "PROCLAMATION",
       "task": {
         "input_params": {
           "announcement_key": "DBP_General_3_${language}"
@@ -5728,7 +5728,7 @@
     {
       "id": "53ee6412-6c6e-456f-a179-2b9e1e277c4b",
       "name": "redirectToClosurePlayer642",
-      "node_type": "REDIRECT",
+      "node_type": "REDIRECT_FLOW",
       "task": {
         "input_params": {
           "url": "/api/contacting-callflows/transfer-calls/ClosureAnnouncementPlayer?cjid=${CJID}&key0=${AnnouncementKey}_${entryLanguage == 'de-DE-UNAVAILABLE' ? 'de-DE' : language}"
@@ -5775,7 +5775,7 @@
     {
       "id": "7dce9263-e676-4be2-aa6d-ae0658f70f9d",
       "name": "technicalErrorMessage642",
-      "node_type": "MESSAGE",
+      "node_type": "MSG_PLAY",
       "task": {
         "input_params": {
           "messages": [
@@ -5820,7 +5820,7 @@
     {
       "id": "98335ec4-d8c8-45e0-bad2-1f06c6d929c9",
       "name": "openChecker_DBP_SC_643",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "openChecker_DBP_SC_643",
@@ -5898,7 +5898,7 @@
     {
       "id": "a4b95c09-a47b-43f6-8d19-7815ca27e7ff",
       "name": "openChecker_DBP_General_C_644",
-      "node_type": "CONTACTING_API",
+      "node_type": "API_FLOW_CALL",
       "task": {
         "input_params": {
           "service_name": "openChecker_DBP_General_C_644",
@@ -6002,7 +6002,7 @@
     {
       "id": "0f25bd98-4386-4b25-ba37-9e412f63a142",
       "name": "buildAttributesForRedirection",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -6123,7 +6123,7 @@
     {
       "id": "7f090958-8120-4612-aabf-a3623a964d99",
       "name": "defaultTaskAttr",
-      "node_type": "TASK_ATTRS_STORE",
+      "node_type": "TASK_STORE",
       "task": {
         "input_params": {
           "task_attrs": {
@@ -6202,7 +6202,7 @@
     {
       "id": "acdfe744-fe95-40f1-9102-664af8dc7c5a",
       "name": "createTask",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6232,7 +6232,7 @@
     {
       "id": "4228358a-1df9-4c35-bf55-5a4a23badbed",
       "name": "createTaskESS",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6264,7 +6264,7 @@
     {
       "id": "3dc8e3ed-8249-4404-a6fe-33ef29d5db3c",
       "name": "createTaskAlternativeLanguage",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6294,7 +6294,7 @@
     {
       "id": "33feaf9b-200d-4ccb-b4f9-1bf4c8ace136",
       "name": "createTaskAlternativeLanguageESS",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6326,7 +6326,7 @@
     {
       "id": "86e2ceba-5307-43a1-b5f0-8409558432cd",
       "name": "createTaskDBPCampaign",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6355,7 +6355,7 @@
     {
       "id": "249fee0b-49ca-49d4-a27c-3f6f09acd81b",
       "name": "createTaskDBPCampaignESS",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6384,7 +6384,7 @@
     {
       "id": "9ab6a2d3-e88e-4eb9-95c8-a903bfd03ab8",
       "name": "createTaskDBPMAPESS",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6415,7 +6415,7 @@
     {
       "id": "4cde7e9c-bda1-400e-8b7d-58eeee84a4c3",
       "name": "createTaskPICampaign",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6445,7 +6445,7 @@
     {
       "id": "7953d3ed-90fb-440f-926f-041fab7583b9",
       "name": "createTaskPICampaignESS",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6476,7 +6476,7 @@
     {
       "id": "840591bc-2fb8-4d0b-a241-4de757949295",
       "name": "createTaskBUSCampaign",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,
@@ -6504,7 +6504,7 @@
     {
       "id": "b478ae3e-1e09-406c-871b-59f6714eae59",
       "name": "createTaskBUSCampaignESS",
-      "node_type": "CREATE_TASK",
+      "node_type": "TASK",
       "task": {
         "input_params": {
           "priority": 0,

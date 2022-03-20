@@ -7,7 +7,7 @@ export enum NodeEnum {
   HANGUP = 'HANGUP',
   MSG_PLAY = 'MSG_PLAY',
   API_CALL = 'API_CALL',
-  STORE = 'STORE',
+  TASK_STORE = 'TASK_STORE',
   TASK = 'TASK',
   TASK_ADV = 'TASK_ADV',
   TASK_UPDATE = 'TASK_UPDATE',
