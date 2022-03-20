@@ -41,11 +41,11 @@ npm start
 #### Displaying path of an entity within a telecommunication network
 ![callFlow](/preview/callflow.PNG "Visualized CallFlow")
 
-#### Highlight edges on mouse hover (red color)
-<img src="/preview/hi_edges.png" alt="drawing" width="500" height="500"/>
+#### Highlight IN and OUT edges on mouse hover (red color)
+<img src="/preview/hi_edges.png" alt="drawing" width="750" height="600"/>
 
 #### Highlight condition of an edge on mouse hover
-<img src="/preview/hi_con.png" alt="drawing" width="500" height="500"/>
+<img src="/preview/hi_con.png" alt="drawing" width="750" height="600"/>
 
 ## This project consist of several algorithms
 - CJ Algorithm (explanation to follow)
