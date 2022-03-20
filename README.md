@@ -38,7 +38,14 @@ npm start
 ```
 
 ### Sneak peak
+#### Network
 ![callFlow](/preview/callflow.PNG "Visualized CallFlow")
+
+#### Highlight edges (red color)
+![callFlow](/preview/hi_edges.png "Visualized CallFlow")
+
+#### Highlight condition of an edge (condition box)
+![callFlow](/preview/hi_edges.png "Visualized CallFlow")
 
 ## This project consist of several algorithms
 - CJ Algorithm (explanation to follow)
