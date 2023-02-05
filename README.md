@@ -56,18 +56,18 @@ npm start
 To come up with an appropriate algorithm for solving the drop out of node types problem with the ability to restructure the network graph in a dynamic fashion, I was inspired by the dropout function used in neural networks (NN). In NN, this function is usually used to deactivate features randomly (input and hidden neurons) to reduce overfitting in predictive models.
 
 #### - What is the behavior of the algorithm?
-The dropout algorithm basically removes nodetypes and reorders a sequence of small subtrees (related nodes and edges) of a network graph.
+The dropout algorithm basically removes node types and reorders a sequence of small subtrees (related nodes and edges) of a network graph.
 
-The dropout algorithm is basically a method inside the project used to drop out nodes to simplify (reorder) the network graph. So, a function f with two inputs f(G, D) where G is the origin state of the CallFlow and D the dropout nodes. G is a set of Nodes, G = { N1Ej, N2Ej , N3Ej, ...., NiEj } where E is a set of edges to their neighbours E = { E1, ..., Ej }. And D is a set of unique NodeType Strings, D = { D1, D2, D3, ..., Dp}. Also, we use the notation V for a subset of "IN" Nodes, V ⊂ G.
-First we fetch a subset of dropout nodes ( D ⊂ G ) including their related ( E ) edges also known as "OUT"/"EXITS". Next, we get a subset of "IN" Nodes ( V ⊂ G ) who do have the dropout Node as an edge(s) "EXIT(S)" for the "gluing" process. At this stage we have a dropout Node ( D ) and its related "IN" Nodes ( V ) and "EXITS" edges ( E ). The next step is to "glue" V with E so n drops out from the graph G. Finally, we update the network graph G with a new structure.
+The dropout algorithm is basically a method inside the project used to drop out nodes to simplify (reorder) the network graph. So, a function $f$ with two inputs $f(G, D)$ where $G$ is the origin state of the CallFlow and $D$ the dropout nodes. $G$ is a set of Nodes, $G = { N_1E_j, N_2E_j,... N_iE_j }$ where $E$ is a set of edges to their neighbours $E = { E_1,E_2,... E_j }$. And $D$ is a set of unique NodeType Strings, $D = { D_1, D_2,... D_p}$. Also, we use the notation $V$ for a subset of IN Nodes, $V \subset G$.
+First, we fetch a subset of dropout nodes $D \subset G$ including their related $E$ edges also known as OUT/EXITS. Next, we get a subset of IN Nodes $V \subset G$ who do have the dropout Node as an edge(s) EXIT(S) for the gluing process. At this stage we have a dropout Node $D$ and its related IN Nodes $V$ and EXITS edges $E$. The next step is to glue $V$ with $E$ so $n$ drops out from the graph $G$. Finally, we update the network graph $G$ with a new structure.
 
 The images below shows the flow of the behavior inside a small part of a CallFlow with 30 nodes and 5 dropout nodes. Normally, this process is applied to a network graph with more than 200 nodes and 800 edges.
 
-1. Finding targeted NodeTypes D
+1. Finding targeted NodeTypes $D$
 
 <img src="/preview/1.png" alt="drawing" width="500" height="500"/>
 
-2. Dropping out targeted nodes and gluing the edges E with the neighbors N
+2. Dropping out targeted nodes and gluing the edges $E$ with the neighbors $N$
 
 <img src="/preview/2.png" alt="drawing" width="500" height="500"/>
 
