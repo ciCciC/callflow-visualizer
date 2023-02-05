@@ -1,9 +1,11 @@
 import { Observable, ReplaySubject } from 'rxjs';
 import {NodeHolder} from "../model/NodeHolder";
+// import {NodeStats} from "../model/NodeStats";
 
 export class NodeHolderService {
 
   private static readonly selectedNodeHolder = new ReplaySubject<NodeHolder | undefined>(1);
+  // private static readonly nodeStats = new ReplaySubject<NodeStats | undefined>(1);
   private static nodeHolderMap = new Map<string, NodeHolder>();
 
   static resetNodeHolderSelection() {

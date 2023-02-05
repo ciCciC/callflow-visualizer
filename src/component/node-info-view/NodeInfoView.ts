@@ -100,6 +100,7 @@ export class NodeInfoView extends LitElement {
   render(): TemplateResult {
     this.initTask();
     return html`
+    ${this.compute_metrics()}
     ${this.nodeRenderer.render(this.checkForExtraInfo())}
     ${this.nodeHolder.flowsList.length > 0 ? html`${this.flowToWhenUi()}` : ''}
     `;
@@ -120,6 +121,29 @@ export class NodeInfoView extends LitElement {
       case NodeEnum.TASK_ADV: this.nodeRenderer = this.nodeHolder.task as CreateTaskTask; break;
       default: this.nodeRenderer = this.nodeHolder.task as DefaultTask; break;
     }
+  }
+
+  private compute_metrics(): TemplateResult {
+    const k_elements = Object.entries(this.nodeHolder.metrics!).map((k) =>
+      html`
+          <th>${k[0]}</th>
+    `);
+
+    const v_elements = Object.entries(this.nodeHolder.metrics!).map((k) =>
+      html`
+          <td>${k[1]}</td>
+    `);
+
+    return html`
+      <table>
+        <tr>
+          ${k_elements}
+        </tr>
+        <tr>
+          ${v_elements}
+        </tr>
+      </table>
+    `;
   }
 
   /***

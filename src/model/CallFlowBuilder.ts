@@ -43,7 +43,8 @@ export class CallFlowBuilder {
         flowsList: this.createFlowsWithDetails(node['id'], rootId, node['flows'], callFlowFallback, node['fallback_node'], callFlowTimeout, node['timeout_node'], node['max_retries_node']),
         node: {id: nodeId, label: node['name']},
         edges: this.createEdges(nodeId, rootId, node['flows'], callFlowFallback, node['fallback_node'], callFlowTimeout, node['timeout_node'], node['max_retries_node']),
-        task: this.createTask(node['task'], node['node_type'])
+        task: this.createTask(node['task'], node['node_type']),
+        metrics: undefined
       });
     }
     );

@@ -4,8 +4,6 @@ import {state, query, queryAll} from 'lit-element/lib/decorators.js';
 import {DataSet} from 'vis-data/peer/esm/vis-data';
 import {Network} from 'vis-network/peer/esm/vis-network';
 import * as _ from "lodash";
-import {round} from "lodash";
-import {max, std} from "mathjs";
 import {NodeHolderService} from "../../service/NodeHolderService";
 import {SideBarService} from "../../service/SideBarService";
 import {
@@ -27,6 +25,7 @@ import {CallFlow} from "../../model/CallFlow";
 import {NetworkGraphOption} from "../../model/NetworkGraphOption";
 import {ViewModeEnum} from "../../model/ViewModeEnum";
 import {ContactingCallFlowService} from "../../service/ContactingCallFlowService";
+import {Metrics} from "../../model/Metrics";
 
 // import {std} from 'mathjs';
 
@@ -364,32 +363,7 @@ export class NetworkGraph extends LitElement {
       </div>
       <div id="0" class="tabcontent" style="position: relative">
         <div class="callFlowName">
-          <table>
-            <tr>
-              <th>Name</th>
-              <td>${this.callFlow?.name}</td>
-            </tr>
-            <tr>
-              <th>Vertex</th>
-              <td>${this.callFlow?.nodeMap.size}</td>
-            </tr>
-            <tr>
-              <th>Edge</th>
-              <td>${this.edgeList?.length}</td>
-            </tr>
-            <tr>
-              <th>Density</th>
-              <td>${this.edgeList != undefined && this.callFlow != undefined ? this.calc_density() : ''}</td>
-            </tr>
-            <tr>
-              <th>Centralization</th>
-              <td>${this.edgeList != undefined && this.callFlow != undefined ? this.calc_centralization() : ''}</td>
-            </tr>
-            <tr>
-              <th>Degree centrality</th>
-              <td>${this.edgeList != undefined && this.callFlow != undefined ? this.calc_h_degree_centrality() : ''}</td>
-            </tr>
-          </table>
+          ${this.edgeList != undefined && this.callFlow != undefined ? this.compute_graph_metrics() : ''}
         </div>
         ${this.callFlow?.viewMode! == ViewModeEnum.DEACTIVATE || this.callFlow?.viewMode == ViewModeEnum.DROPOUT ? html`<div class="algorithmViewMode">
           <div>
@@ -468,27 +442,33 @@ export class NetworkGraph extends LitElement {
     this.edgeList?.clear();
   }
 
-  private calc_density(){
-    const m = this.edgeList?.length!
-    const n = this.callFlow?.nodeMap.size!
-    const d = m/(n*(n-1))
-    return round(d, 4)
-  }
+  private compute_graph_metrics(): TemplateResult{
+    const metrics = Metrics.graph(this.networkGraph!, this.nodeList!, this.edgeList!);
+    const metrics_elements = Object.entries(metrics).map((k) =>
+      html`
+        <tr>
+          <th>${k[0]}</th>
+          <td>${k[1]}</td>
+        </tr>
+    `)
 
-  private calc_centralization(){
-    const N = Array.from(this.nodeMap?.values()!).map((n) => n.edges.length)
-    const sd_degree = std(N, 'unbiased')
-    return round(sd_degree, 4)
-  }
-
-  private calc_h_degree_centrality(){
-    const network = Array.from(this.nodeMap?.values()!);
-    const dc = network.map((n) => {
-      const edges = this.networkGraph?.getConnectedEdges(n.id).map((e) => e);
-      return edges?.length!;
-    });
-
-    return max(dc);
+    return html`
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>${this.callFlow?.name}</td>
+        </tr>
+        <tr>
+          <th>Vertex</th>
+          <td>${this.callFlow?.nodeMap.size}</td>
+        </tr>
+        <tr>
+          <th>Edge</th>
+          <td>${this.edgeList?.length}</td>
+        </tr>
+        ${metrics_elements}
+      </table>
+    `;
   }
 
   private isDropOutRadioActive(): boolean {
@@ -620,6 +600,7 @@ export class NetworkGraph extends LitElement {
   }
 
   private openLeftSideBar(nodeHolder: NodeHolder) {
+    nodeHolder.metrics = Metrics.vertex(this.networkGraph!, nodeHolder);
     NodeHolderService.setNodeHolderSelection(nodeHolder);
     SideBarService.toggleLeftBar();
   }
