@@ -14,7 +14,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.2",
+    "@babel/core": "^7.20.12",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-decorators": "^7.7.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
@@ -79,6 +79,7 @@
     "immer": "^9.0.5",
     "lit-element": "^2.5.1",
     "lodash": "^4.17.20",
+    "mathjs": "^11.5.1",
     "regenerator-runtime": "^0.13.3",
     "resize-observer-polyfill": "^1.5.1",
     "vis-data": "^7.1.2",

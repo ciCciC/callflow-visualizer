@@ -21,4 +21,5 @@ export interface NodeHolder {
   node: Node;
   edges: Edge [];
   task: BaseTask;
+  metrics: undefined;
 }

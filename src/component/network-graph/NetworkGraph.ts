@@ -25,6 +25,9 @@ import {CallFlow} from "../../model/CallFlow";
 import {NetworkGraphOption} from "../../model/NetworkGraphOption";
 import {ViewModeEnum} from "../../model/ViewModeEnum";
 import {ContactingCallFlowService} from "../../service/ContactingCallFlowService";
+import {Metrics} from "../../model/Metrics";
+
+// import {std} from 'mathjs';
 
 
 @customElement('network-graph')
@@ -322,7 +325,7 @@ export class NetworkGraph extends LitElement {
         border-radius: 4px;
         border-style: hidden;
         outline: none;
-        box-shadow: 0;
+        box-shadow: 0px;
         padding: 8px;
       }
 
@@ -337,7 +340,7 @@ export class NetworkGraph extends LitElement {
         border-radius: 4px;
         border-style: hidden;
         outline: none;
-        box-shadow: 0;
+        box-shadow: 0px;
         padding: 8px;
       }
 
@@ -360,18 +363,7 @@ export class NetworkGraph extends LitElement {
       </div>
       <div id="0" class="tabcontent" style="position: relative">
         <div class="callFlowName">
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>Nods</th>
-              <th>Edges</th>
-            </tr>
-            <tr>
-              <td>${this.callFlow?.name}</td>
-              <td>${this.callFlow?.nodeMap.size}</td>
-              <td>${this.edgeList?.length}</td>
-            </tr>
-          </table>
+          ${this.edgeList != undefined && this.callFlow != undefined ? this.compute_graph_metrics() : ''}
         </div>
         ${this.callFlow?.viewMode! == ViewModeEnum.DEACTIVATE || this.callFlow?.viewMode == ViewModeEnum.DROPOUT ? html`<div class="algorithmViewMode">
           <div>
@@ -448,6 +440,35 @@ export class NetworkGraph extends LitElement {
   clearGraph() {
     this.nodeList?.clear();
     this.edgeList?.clear();
+  }
+
+  private compute_graph_metrics(): TemplateResult{
+    const metrics = Metrics.graph(this.networkGraph!, this.nodeList!, this.edgeList!);
+    const metrics_elements = Object.entries(metrics).map((k) =>
+      html`
+        <tr>
+          <th>${k[0]}</th>
+          <td>${k[1]}</td>
+        </tr>
+    `)
+
+    return html`
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>${this.callFlow?.name}</td>
+        </tr>
+        <tr>
+          <th>Vertex</th>
+          <td>${this.callFlow?.nodeMap.size}</td>
+        </tr>
+        <tr>
+          <th>Edge</th>
+          <td>${this.edgeList?.length}</td>
+        </tr>
+        ${metrics_elements}
+      </table>
+    `;
   }
 
   private isDropOutRadioActive(): boolean {
@@ -579,6 +600,7 @@ export class NetworkGraph extends LitElement {
   }
 
   private openLeftSideBar(nodeHolder: NodeHolder) {
+    nodeHolder.metrics = Metrics.vertex(this.networkGraph!, nodeHolder);
     NodeHolderService.setNodeHolderSelection(nodeHolder);
     SideBarService.toggleLeftBar();
   }
